@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AISsrvc/srvc_ais.asmx.cs">
+    <Files>
+      <File FileName="AISsrvc/Default.aspx" Line="1" Column="1" />
+      <File FileName="AISsrvc/Global.asax.cs" Line="1" Column="1" />
+      <File FileName="AISsrvc/srvc_ais.asmx.cs" Line="87" Column="18" />
+      <File FileName="AISsrvc/Global.asax" Line="1" Column="1" />
+      <File FileName="AISsrvc/Default.aspx.cs" Line="1" Column="1" />
+      <File FileName="AISsrvc/srvc_ais.asmx" Line="1" Column="1" />
+      <File FileName="AISsrvc/ActivationLogistic.cs" Line="7" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
