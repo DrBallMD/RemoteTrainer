@@ -65,9 +65,9 @@ namespace AISsrvc
 			inst.close ();
 			XmlSerializer xs = new XmlSerializer (typeof(List<ANeuralNetwork.StudyData>));
 			System.IO.FileStream file = System.IO.File.Open (fpath + "data.xml",FileMode.OpenOrCreate);
-			List<ANeuralNetwork.ANetwork> old_data;
+			List<ANeuralNetwork.StudyData> old_data;
 			if (file.Length != 0) {
-				old_data = xs.Deserialize (file);
+				old_data = (List<ANeuralNetwork.StudyData>)xs.Deserialize (file);
 			} else {
 				old_data = new List<ANeuralNetwork.StudyData> ();
 			}
@@ -83,7 +83,7 @@ namespace AISsrvc
 			inst.close ();
 			XmlSerializer xs = new XmlSerializer (typeof(List<ANeuralNetwork.StudyData>));
 			System.IO.FileStream file = System.IO.File.OpenRead (fpath + "data.xml");
-			List<ANeuralNetwork.StudyData> result = xs.Deserialize (file);
+			List<ANeuralNetwork.StudyData> result = (List<ANeuralNetwork.StudyData>)xs.Deserialize (file);
 			file.Close ();
 			return result;
 		}
