@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GATraining", "GATraining\GATraining.csproj", "{F3FB299A-F06E-4BF4-A5BB-18A1D1991314}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F57EAF43-D6AC-42F4-AA7D-DC1712808888} = {F57EAF43-D6AC-42F4-AA7D-DC1712808888}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfTrainer", "WcfTrainer\WcfTrainer.csproj", "{F57EAF43-D6AC-42F4-AA7D-DC1712808888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticLibrary", "GeneticLibrary\GeneticLibrary.csproj", "{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoLib", "AlgoLib\AlgoLib.csproj", "{499FDAFC-FEC6-4033-AB57-83AB4DA39A0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3FB299A-F06E-4BF4-A5BB-18A1D1991314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FB299A-F06E-4BF4-A5BB-18A1D1991314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3FB299A-F06E-4BF4-A5BB-18A1D1991314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3FB299A-F06E-4BF4-A5BB-18A1D1991314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F57EAF43-D6AC-42F4-AA7D-DC1712808888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57EAF43-D6AC-42F4-AA7D-DC1712808888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57EAF43-D6AC-42F4-AA7D-DC1712808888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57EAF43-D6AC-42F4-AA7D-DC1712808888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499FDAFC-FEC6-4033-AB57-83AB4DA39A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499FDAFC-FEC6-4033-AB57-83AB4DA39A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499FDAFC-FEC6-4033-AB57-83AB4DA39A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499FDAFC-FEC6-4033-AB57-83AB4DA39A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
