@@ -34,12 +34,6 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Web.Services" />
-    <Reference Include="AISdb">
-      <HintPath>..\..\AISdb\AISdb\bin\Debug\AISdb.dll</HintPath>
-    </Reference>
-    <Reference Include="ANeuralNetwork">
-      <HintPath>..\..\ANeuralNetwork\ANeuralNetwork\bin\Debug\ANeuralNetwork.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -71,4 +65,18 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ANeuralNetwork\ANeuralNetwork\ANeuralNetwork.csproj">
+      <Project>{26F2C96D-5279-4340-A2F2-3D0A722B94E1}</Project>
+      <Name>ANeuralNetwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AISdb\AISdb\AISdb.csproj">
+      <Project>{E38CA1B7-1F86-4777-85D0-252C408C1BA9}</Project>
+      <Name>AISdb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GeneticLibrary\GeneticLibrary.csproj">
+      <Project>{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}</Project>
+      <Name>GeneticLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
