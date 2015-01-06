@@ -1,6 +1,7 @@
 using System;
 using System.Data;
-using Mono.Data.Sqlite;
+using System.Data.SQLite;
+using System.Data.Common;
 using System.Collections.Generic;
 
 namespace AISdb
@@ -21,9 +22,18 @@ namespace AISdb
 		}
 
 		public void open(string connection_string){
-			connection = (IDbConnection)new SqliteConnection (connection_string);
-			connection.Open ();
-			cmd = connection.CreateCommand ();
+            //connection = new SQLiteConnection("Data Source = " + connection_string);
+            connection = new SQLiteConnection(@"Data Source="+connection_string +";Version=3;FailIfMissing=False");
+            try
+            {
+                connection.Open();
+            }
+            catch (Exception e)
+            {
+                SQLiteConnection.CreateFile(connection_string);
+                connection.Open();
+            }
+                cmd = connection.CreateCommand ();
 			cmd.CommandText = "CREATE TABLE IF NOT EXISTS AISTasks (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, NAME TEXT NOT NULL, AUTHOR TEXT NOT NULL, DESCRIPTION TEXT, TYPE INTEGER, ERROR REAL NOT NULL, FILEPATH TEXT NOT NULL);";
 			cmd.ExecuteNonQuery ();
 		}
@@ -31,36 +41,36 @@ namespace AISdb
 		public void addTask(AISTask newtask){
 			//throw new Exception ("not implemented yet");
 			cmd.CommandText = "INSERT INTO AISTasks(NAME, AUTHOR, DESCRIPTION, TYPE, ERROR, FILEPATH) VALUES( @pName, @pAuthor, @pDescription, @pType, @pError, @pFilepath);";
-			cmd.Parameters.Add(new SqliteParameter("@pName",newtask.name));
-			cmd.Parameters.Add (new SqliteParameter ("@pAuthor", newtask.author));
-			cmd.Parameters.Add (new SqliteParameter ("@pDescription", newtask.description));
-			cmd.Parameters.Add (new SqliteParameter ("@pType", newtask.ttype==TaskType.GeneticAlgorithm?0:1));
-			cmd.Parameters.Add (new SqliteParameter ("@pError", newtask.current_error));
-			cmd.Parameters.Add (new SqliteParameter ("@pFilepath", newtask.fpath));
+			cmd.Parameters.Add(new SQLiteParameter("@pName",newtask.name));
+			cmd.Parameters.Add (new SQLiteParameter ("@pAuthor", newtask.author));
+			cmd.Parameters.Add (new SQLiteParameter ("@pDescription", newtask.description));
+			cmd.Parameters.Add (new SQLiteParameter ("@pType", newtask.ttype==TaskType.GeneticAlgorithm?0:1));
+			cmd.Parameters.Add (new SQLiteParameter ("@pError", newtask.current_error));
+			cmd.Parameters.Add (new SQLiteParameter ("@pFilepath", newtask.fpath));
 			cmd.ExecuteNonQuery ();
 			cmd.Parameters.Clear ();
 		}
 
 		public void updateTask(AISTask updatedTask){
 			cmd.CommandText = "UPDATE AISTasks SET NAME = @pName, AUTHOR = @pAuthor, DESCRIPTION = @pDescription, ERROR = @pError WHERE ID = @pId;";
-			cmd.Parameters.Add(new SqliteParameter("@pName",updatedTask.name));
-			cmd.Parameters.Add (new SqliteParameter ("@pAuthor", updatedTask.author));
-			cmd.Parameters.Add (new SqliteParameter ("@pDescription", updatedTask.description));
-			cmd.Parameters.Add (new SqliteParameter ("@pError", updatedTask.current_error));
-			cmd.Parameters.Add (new SqliteParameter ("@pId", updatedTask.id));
+			cmd.Parameters.Add(new SQLiteParameter("@pName",updatedTask.name));
+			cmd.Parameters.Add (new SQLiteParameter ("@pAuthor", updatedTask.author));
+			cmd.Parameters.Add (new SQLiteParameter ("@pDescription", updatedTask.description));
+			cmd.Parameters.Add (new SQLiteParameter ("@pError", updatedTask.current_error));
+			cmd.Parameters.Add (new SQLiteParameter ("@pId", updatedTask.id));
 			cmd.ExecuteNonQuery ();
 			cmd.Parameters.Clear ();
 		}
 		public void deleteTask(int id){
 			cmd.CommandText = "DELETE FROM AISTasks WHERE ID= @pId;";
-			cmd.Parameters.Add(new SqliteParameter("@pId",id));
+			cmd.Parameters.Add(new SQLiteParameter("@pId",id));
 			cmd.ExecuteNonQuery ();
 			cmd.Parameters.Clear ();
 		}
 
 		public float getTaskError(int id){
 			cmd.CommandText = "SELECT ERROR FROM AISTasks WHERE ID = @pId;";
-			cmd.Parameters.Add (new SqliteParameter ("@pId",id));
+			cmd.Parameters.Add (new SQLiteParameter ("@pId",id));
 			float result = (float)cmd.ExecuteScalar ();
 			cmd.Parameters.Clear ();
 			return result;
@@ -68,15 +78,15 @@ namespace AISdb
 
 		public void setTaskError(int id, float newError){
 			cmd.CommandText = "UPDATE AISTasks SET ERROR = @pError WHERE ID = @pId;";
-			cmd.Parameters.Add (new SqliteParameter ("@pError", newError));
-			cmd.Parameters.Add(new SqliteParameter("@pId",id));
+			cmd.Parameters.Add (new SQLiteParameter ("@pError", newError));
+			cmd.Parameters.Add(new SQLiteParameter("@pId",id));
 			cmd.ExecuteNonQuery ();
 			cmd.Parameters.Clear ();
 		}
 
 		public string getTaskFilepath(int id){
 			cmd.CommandText = "SELECT FILEPATH FROM AISTasks WHERE ID = @pId;";
-			cmd.Parameters.Add (new SqliteParameter ("@pId",id));
+			cmd.Parameters.Add (new SQLiteParameter ("@pId",id));
 			string result = (string)cmd.ExecuteScalar ();
 			cmd.Parameters.Clear ();
 			return result;
