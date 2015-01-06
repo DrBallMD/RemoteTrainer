@@ -2,8 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GATraining", "GATraining\GATraining.csproj", "{F3FB299A-F06E-4BF4-A5BB-18A1D1991314}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfTrainer", "WcfTrainer\WcfTrainer.csproj", "{F57EAF43-D6AC-42F4-AA7D-DC1712808888}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AFFAA7FD-DF66-4B6D-B459-F10A8B42A319} = {AFFAA7FD-DF66-4B6D-B459-F10A8B42A319}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticLibrary", "GeneticLibrary\GeneticLibrary.csproj", "{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}"
 EndProject
@@ -15,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ANeuralNetwork", "ANeuralNe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{AFFAA7FD-DF66-4B6D-B459-F10A8B42A319}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainerGUIForms", "TrainerGUIForms\TrainerGUIForms.csproj", "{6620AADB-5BA5-45E4-B565-0B268E9385EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,10 +28,6 @@ Global
 		{F3FB299A-F06E-4BF4-A5BB-18A1D1991314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3FB299A-F06E-4BF4-A5BB-18A1D1991314}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3FB299A-F06E-4BF4-A5BB-18A1D1991314}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F57EAF43-D6AC-42F4-AA7D-DC1712808888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F57EAF43-D6AC-42F4-AA7D-DC1712808888}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F57EAF43-D6AC-42F4-AA7D-DC1712808888}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F57EAF43-D6AC-42F4-AA7D-DC1712808888}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD78B04F-9DE7-4E91-8703-4FEA012FFC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,6 +48,10 @@ Global
 		{AFFAA7FD-DF66-4B6D-B459-F10A8B42A319}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFFAA7FD-DF66-4B6D-B459-F10A8B42A319}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFFAA7FD-DF66-4B6D-B459-F10A8B42A319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6620AADB-5BA5-45E4-B565-0B268E9385EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6620AADB-5BA5-45E4-B565-0B268E9385EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6620AADB-5BA5-45E4-B565-0B268E9385EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6620AADB-5BA5-45E4-B565-0B268E9385EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

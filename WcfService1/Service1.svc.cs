@@ -149,5 +149,12 @@ namespace WcfService1
             db.deleteTask(id);
             db.close();
         }
+        public byte[] GetAssembly()
+        {
+            string dir = HostingEnvironment.ApplicationPhysicalPath+"\\bin\\";
+            byte[] file = File.ReadAllBytes(dir+"GeneticLibrary.dll");
+            return file;
+            //return Assembly.
+        }
     }
 }

@@ -32,6 +32,8 @@ namespace WcfService1
         void updateTask(AISdb.AISTask tt);
         [OperationContract]
         void deleteTask(int id);
+        [OperationContract]
+        byte[] GetAssembly();
         // TODO: Добавьте здесь операции служб
     }
 

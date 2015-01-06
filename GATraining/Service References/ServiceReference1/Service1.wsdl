@@ -2,16 +2,66 @@
 <wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import schemaLocation="http://localhost:8687/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
-      <xsd:import schemaLocation="http://localhost:8687/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://localhost:8687/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfTrainer" />
+      <xsd:import schemaLocation="http://localhost:1924/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:1924/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:1924/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AISdb" />
+      <xsd:import schemaLocation="http://localhost:1924/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ANeuralNetwork" />
+      <xsd:import schemaLocation="http://localhost:1924/Service1.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IService1_GetData_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetData" />
+  <wsdl:message name="IService1_getTasks_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTasks" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetData_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  <wsdl:message name="IService1_getTasks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getNeuralNetwork_InputMessage">
+    <wsdl:part name="parameters" element="tns:getNeuralNetwork" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getNeuralNetwork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getNeuralNetworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_setNetworkResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:setNetworkResults" />
+  </wsdl:message>
+  <wsdl:message name="IService1_setNetworkResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setNetworkResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getError_InputMessage">
+    <wsdl:part name="parameters" element="tns:getError" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getError_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getErrorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getStudyData_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStudyData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getStudyData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStudyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addStudyData_InputMessage">
+    <wsdl:part name="parameters" element="tns:addStudyData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addStudyData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addStudyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:addTask" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateTask" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteTask" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteTaskResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_GetAssembly_InputMessage">
     <wsdl:part name="parameters" element="tns:GetAssembly" />
@@ -19,30 +69,124 @@
   <wsdl:message name="IService1_GetAssembly_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAssemblyResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
-  </wsdl:message>
-  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
-  </wsdl:message>
   <wsdl:portType name="IService1">
-    <wsdl:operation name="GetData">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    <wsdl:operation name="getTasks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getTasks" message="tns:IService1_getTasks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getTasksResponse" message="tns:IService1_getTasks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getNeuralNetwork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getNeuralNetwork" message="tns:IService1_getNeuralNetwork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getNeuralNetworkResponse" message="tns:IService1_getNeuralNetwork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setNetworkResults">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/setNetworkResults" message="tns:IService1_setNetworkResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/setNetworkResultsResponse" message="tns:IService1_setNetworkResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getError">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getError" message="tns:IService1_getError_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getErrorResponse" message="tns:IService1_getError_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStudyData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getStudyData" message="tns:IService1_getStudyData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getStudyDataResponse" message="tns:IService1_getStudyData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addStudyData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addStudyData" message="tns:IService1_addStudyData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addStudyDataResponse" message="tns:IService1_addStudyData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addTask" message="tns:IService1_addTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addTaskResponse" message="tns:IService1_addTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateTask" message="tns:IService1_updateTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateTaskResponse" message="tns:IService1_updateTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteTask" message="tns:IService1_deleteTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteTaskResponse" message="tns:IService1_deleteTask_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetAssembly">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAssembly" message="tns:IService1_GetAssembly_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAssemblyResponse" message="tns:IService1_GetAssembly_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetDataUsingDataContract">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
-    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="GetData">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+    <wsdl:operation name="getTasks">
+      <soap:operation soapAction="http://tempuri.org/IService1/getTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNeuralNetwork">
+      <soap:operation soapAction="http://tempuri.org/IService1/getNeuralNetwork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setNetworkResults">
+      <soap:operation soapAction="http://tempuri.org/IService1/setNetworkResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getError">
+      <soap:operation soapAction="http://tempuri.org/IService1/getError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStudyData">
+      <soap:operation soapAction="http://tempuri.org/IService1/getStudyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addStudyData">
+      <soap:operation soapAction="http://tempuri.org/IService1/addStudyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addTask">
+      <soap:operation soapAction="http://tempuri.org/IService1/addTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTask">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteTask">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteTask" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -59,19 +203,10 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetDataUsingDataContract">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="Service1">
     <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
-      <soap:address location="http://localhost:8687/Service1.svc" />
+      <soap:address location="http://localhost:1924/Service1.svc" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
