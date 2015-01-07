@@ -27,7 +27,7 @@ namespace WcfService1
         [OperationContract]
         void addStudyData(int id, List<ANeuralNetwork.StudyData> data);
         [OperationContract]
-        void addTask(AISdb.AISTask tt, params object[] parameters);
+        void addTask(AISdb.AISTask tt, List<string> parameters);
         [OperationContract]
         void updateTask(AISdb.AISTask tt);
         [OperationContract]

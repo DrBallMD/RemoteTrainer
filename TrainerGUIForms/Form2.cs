@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using TrainerGUIForms.ServiceReference1;
+
 namespace TrainerGUIForms
 {
     public partial class Form2 : Form
@@ -44,7 +45,11 @@ namespace TrainerGUIForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            AISTask[] tasks = client.getTasks();
+            foreach (AISTask tt in tasks)
+            {
+                richTextBox1.AppendText(tt.id+"\t"+tt.name+""+tt.author+"\t"+tt.description+"\n");
+            }
         }
     }
 }

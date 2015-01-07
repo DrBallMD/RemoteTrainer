@@ -47,7 +47,7 @@ namespace WcfService1
         /// </summary>
         /// <param name="tt"></param>
         /// <param name="parameters">для нейронных сетей 0 - нейроны на входе, 1 = скрытые слои, 2=кол-во нейронов в скрытых слоях 3= нейроны на выходе 4=активационная ф-я(нолик)</param>
-        public void addTask(AISdb.AISTask tt, params object[] parameters)
+        public void addTask(AISdb.AISTask tt, List<string> parameters) //оно всё равно превратится в стринги в процессе передачи.
         {
             switch (tt.ttype)
             {
@@ -75,7 +75,7 @@ namespace WcfService1
         /// <summary>
         /// Получить экземпляр нейронной сети
         /// </summary>
-        /// <param name="id">видимо, id юзера, с которым идет работа</param>
+        /// <param name="id">id задачи</param>
         /// <returns></returns>
         public ANeuralNetwork.ANetwork getNeuralNetwork(int id)
         {
@@ -93,7 +93,7 @@ namespace WcfService1
         /// <summary>
         /// Новый результат обучения нейронки
         /// </summary>
-        /// <param name="id">id пользователя</param>
+        /// <param name="id">id задачи</param>
         /// <param name="net">экземпляр сети</param>
         /// <param name="newError">новое значение ошибки</param>
         public void setNetworkResults(int id, ANeuralNetwork.ANetwork net, float newError)
@@ -120,7 +120,7 @@ namespace WcfService1
         /// <summary>
         /// Получить данные для обучения
         /// </summary>
-        /// <param name="id">пользователь</param>
+        /// <param name="id">задача</param>
         /// <returns></returns>
         public List<ANeuralNetwork.StudyData> getStudyData(int id)
         {
