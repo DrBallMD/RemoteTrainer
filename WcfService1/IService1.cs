@@ -27,13 +27,15 @@ namespace WcfService1
         [OperationContract]
         void addStudyData(int id, List<ANeuralNetwork.StudyData> data);
         [OperationContract]
-        void addTask(AISdb.AISTask tt, List<string> parameters);
+        void addTask(AISdb.AISTask tt, params object[] parameters);
         [OperationContract]
         void updateTask(AISdb.AISTask tt);
         [OperationContract]
         void deleteTask(int id);
         [OperationContract]
-        byte[] GetAssembly();
+        byte[] GetAssembly(string name);
+        [OperationContract]
+        string[] GetAvailableGALibs();
         // TODO: Добавьте здесь операции служб
     }
 

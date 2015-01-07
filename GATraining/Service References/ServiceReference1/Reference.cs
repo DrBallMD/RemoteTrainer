@@ -475,7 +475,22 @@ namespace GATraining.ServiceReference1 {
         void addStudyData(int id, GATraining.ServiceReference1.StudyData[] data);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addTask", ReplyAction="http://tempuri.org/IService1/addTaskResponse")]
-        void addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters);
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(double[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(string[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ANetwork))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ALayer[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ALayer))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ANeuron[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ANeuron))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ALink[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ALink))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.StudyData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.StudyData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.AISTask[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.AISTask))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.TaskType))]
+        void addTask(GATraining.ServiceReference1.AISTask tt, object[] parameters);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/updateTask", ReplyAction="http://tempuri.org/IService1/updateTaskResponse")]
         void updateTask(GATraining.ServiceReference1.AISTask tt);
@@ -484,7 +499,10 @@ namespace GATraining.ServiceReference1 {
         void deleteTask(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAssembly", ReplyAction="http://tempuri.org/IService1/GetAssemblyResponse")]
-        byte[] GetAssembly();
+        byte[] GetAssembly(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAvailableGALibs", ReplyAction="http://tempuri.org/IService1/GetAvailableGALibsResponse")]
+        string[] GetAvailableGALibs();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -538,7 +556,7 @@ namespace GATraining.ServiceReference1 {
             base.Channel.addStudyData(id, data);
         }
         
-        public void addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters) {
+        public void addTask(GATraining.ServiceReference1.AISTask tt, object[] parameters) {
             base.Channel.addTask(tt, parameters);
         }
         
@@ -550,8 +568,12 @@ namespace GATraining.ServiceReference1 {
             base.Channel.deleteTask(id);
         }
         
-        public byte[] GetAssembly() {
-            return base.Channel.GetAssembly();
+        public byte[] GetAssembly(string name) {
+            return base.Channel.GetAssembly(name);
+        }
+        
+        public string[] GetAvailableGALibs() {
+            return base.Channel.GetAvailableGALibs();
         }
     }
 }

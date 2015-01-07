@@ -15,7 +15,7 @@ namespace GATraining
         static ServiceReference1.Service1Client service = new ServiceReference1.Service1Client();
         static void Main(string[] args)
         {
-            File.WriteAllBytes("GeneticLibrary.dll", service.GetAssembly());
+            //File.WriteAllBytes("GeneticLibrary.dll", service.GetAssembly());
             Assembly assembly = Assembly.LoadFile(Directory.GetCurrentDirectory()+"\\GeneticLibrary.dll");
             Type fooType = assembly.GetType("GeneticLibrary.Maximization");
             IGenetical foo = Activator.CreateInstance(fooType, -50, 50, 3, 0.04) as IGenetical;

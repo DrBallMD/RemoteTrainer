@@ -9,16 +9,21 @@ using System.IO;
 using System.Xml.Serialization;
 using System.Web;
 using System.Web.Hosting;
+using System.ServiceModel.Activation;
 
 
 namespace WcfService1
 {
     // ПРИМЕЧАНИЕ. Команду "Переименовать" в меню "Рефакторинг" можно использовать для одновременного изменения имени класса "Service1" в коде, SVC-файле и файле конфигурации.
     // ПРИМЕЧАНИЕ. Чтобы запустить клиент проверки WCF для тестирования службы, выберите элементы Service1.svc или Service1.svc.cs в обозревателе решений и начните отладку.
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class Service1 : IService1
     {
         private string connstr = HostingEnvironment.ApplicationPhysicalPath + "ais.db";
-        
+        /// <summary>
+        /// Получить список режимов работы - генетический алгоритм или нейронка
+        /// </summary>
+        /// <returns>Список режимов</returns>
         public List<AISdb.AISTask> getTasks()
         {
             AISdb.AISdb db = AISdb.AISdb.getInstance();
@@ -27,6 +32,11 @@ namespace WcfService1
             db.close();
             return result;
         }
+        /// <summary>
+        /// Генерирует путь для сохранения результата
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public string generatePath(string a)
         {
              return Convert.ToBase64String (new System.Security.Cryptography.MD5CryptoServiceProvider ().ComputeHash (Encoding.ASCII.GetBytes(DateTime.Now.Millisecond.ToString () + a))).Replace('\\','[').Replace('/',']');
@@ -37,13 +47,13 @@ namespace WcfService1
         /// </summary>
         /// <param name="tt"></param>
         /// <param name="parameters">для нейронных сетей 0 - нейроны на входе, 1 = скрытые слои, 2=кол-во нейронов в скрытых слоях 3= нейроны на выходе 4=активационная ф-я(нолик)</param>
-        public void addTask(AISdb.AISTask tt, List<string> parameters)
+        public void addTask(AISdb.AISTask tt, params object[] parameters)
         {
             switch (tt.ttype)
             {
                 case AISdb.TaskType.ArtificialNeuralNetwork:
                     tt.fpath = HostingEnvironment.ApplicationPhysicalPath + "AIS\\NN\\" + generatePath(tt.name + tt.author) + "\\";
-                    ANeuralNetwork.ANetwork nn = new ANeuralNetwork.ANetwork(Int32.Parse(parameters[0]), Int32.Parse(parameters[1]), Int32.Parse(parameters[2]), Int32.Parse(parameters[3]), Int32.Parse(parameters[4]));
+                    ANeuralNetwork.ANetwork nn = new ANeuralNetwork.ANetwork(Convert.ToInt32(parameters[0]), Convert.ToInt32(parameters[1]), Convert.ToInt32(parameters[2]), Convert.ToInt32(parameters[3]), Convert.ToInt32(parameters[4]));
                     XmlSerializer xs = new XmlSerializer(nn.GetType());
                     Directory.CreateDirectory(tt.fpath);
                     FileStream file = File.Create(tt.fpath + "network.xml");
@@ -62,6 +72,11 @@ namespace WcfService1
             db.addTask(tt);
             db.close();
         }
+        /// <summary>
+        /// Получить экземпляр нейронной сети
+        /// </summary>
+        /// <param name="id">видимо, id юзера, с которым идет работа</param>
+        /// <returns></returns>
         public ANeuralNetwork.ANetwork getNeuralNetwork(int id)
         {
              AISdb.AISdb inst = AISdb.AISdb.getInstance ();
@@ -75,6 +90,12 @@ namespace WcfService1
              return result;
 
         }
+        /// <summary>
+        /// Новый результат обучения нейронки
+        /// </summary>
+        /// <param name="id">id пользователя</param>
+        /// <param name="net">экземпляр сети</param>
+        /// <param name="newError">новое значение ошибки</param>
         public void setNetworkResults(int id, ANeuralNetwork.ANetwork net, float newError)
         {
              AISdb.AISdb inst = AISdb.AISdb.getInstance ();
@@ -96,6 +117,11 @@ namespace WcfService1
              inst.close ();
              return result;
         }
+        /// <summary>
+        /// Получить данные для обучения
+        /// </summary>
+        /// <param name="id">пользователь</param>
+        /// <returns></returns>
         public List<ANeuralNetwork.StudyData> getStudyData(int id)
         {
              AISdb.AISdb inst = AISdb.AISdb.getInstance ();
@@ -116,7 +142,11 @@ namespace WcfService1
              file.Close ();
              return result;
         }
-
+        /// <summary>
+        ///  Добавить данные для обучения
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="data"></param>
         public void addStudyData(int id, List<ANeuralNetwork.StudyData> data)
         {
              AISdb.AISdb inst = AISdb.AISdb.getInstance ();
@@ -135,6 +165,10 @@ namespace WcfService1
              xs.Serialize (file, old_data);
              file.Close ();
         }
+        /// <summary>
+        /// обновить задачу
+        /// </summary>
+        /// <param name="tt"></param>
         public void updateTask(AISdb.AISTask tt)
         {
             AISdb.AISdb db = AISdb.AISdb.getInstance();
@@ -149,12 +183,15 @@ namespace WcfService1
             db.deleteTask(id);
             db.close();
         }
-        public byte[] GetAssembly()
+        public byte[] GetAssembly(string name)
         {
-            string dir = HostingEnvironment.ApplicationPhysicalPath+"\\bin\\";
-            byte[] file = File.ReadAllBytes(dir+"GeneticLibrary.dll");
+            string dir = HostingEnvironment.ApplicationPhysicalPath+"\\bin\\GALibraries\\";
+            byte[] file = File.ReadAllBytes(dir+name+".dll");
             return file;
-            //return Assembly.
+        }
+        public string[] GetAvailableGALibs()
+        {
+            return null; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
         }
     }
 }

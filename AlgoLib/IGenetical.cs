@@ -8,5 +8,6 @@ namespace AlgoLib
     {
         void NextGeneration();
         string GetBest();
+        //bool IsAcceptableDeviation();
     }
 }

@@ -17,6 +17,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{AFFAA7FD-DF66-4B6D-B459-F10A8B42A319}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainerGUIForms", "TrainerGUIForms\TrainerGUIForms.csproj", "{6620AADB-5BA5-45E4-B565-0B268E9385EA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AFFAA7FD-DF66-4B6D-B459-F10A8B42A319} = {AFFAA7FD-DF66-4B6D-B459-F10A8B42A319}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
