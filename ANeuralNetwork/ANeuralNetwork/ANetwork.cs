@@ -9,7 +9,7 @@ namespace ANeuralNetwork
 	{
 		public ANetwork(){
 		}
-		public List<ALayer> layers;
+		protected internal List<ALayer> layers;
 
 		public ANetwork (int inputNeurons, int hiddenLayers, int hiddenNeurons, int outputNeurons, int activation_func)
 		{
@@ -44,19 +44,19 @@ namespace ANeuralNetwork
 			layers.Add (last);
 			#endregion
 		}
-		public void setInput(List<double> input){
+		protected internal void setInput(List<double> input){
 			for (int i=0; i<layers[0].getNeuronsCount(); i++) {
 				layers[0].neurons[i].setOutput(input[i]);
 			}				                             
 		}
-		public List<double> getResults(){
+		protected internal List<double> getResults(){
 			List<double> result = new List<double> ();
 			foreach (ANeuron n in layers[layers.Count-1].neurons) {
 				result.Add (n.getOutput ());
 			}
 			return result;
 		}
-		public void calcResult(){
+		protected internal void calcResult(){
 			for (int i=1; i<layers.Count; i++) {
 				foreach (ANeuron n in layers[i].neurons) {
 					List<double> inp = new List<double> ();
@@ -67,7 +67,7 @@ namespace ANeuralNetwork
 				}
 			}
 		}
-		public double calcStdError(List<double> correctAnwser){
+		protected internal double calcStdError(List<double> correctAnwser){
 			double sum = 0;
 			List<double> res = getResults ();
 			for (int i = 0; i< correctAnwser.Count; i ++) {
@@ -76,7 +76,7 @@ namespace ANeuralNetwork
 			//Console.WriteLine ("Err:" + sum * 0.5);
 			return sum * 0.5;
 		}
-		public void study(List<List<double>> inputs, List<List<double>> anwsers, double accectableStdError, int maxIterations){
+		public double study(List<List<double>> inputs, List<List<double>> anwsers, double accectableStdError, int maxIterations){
 			double oldError = 0;
 			int layer;
 			int neuron;
@@ -85,7 +85,7 @@ namespace ANeuralNetwork
 			ALink oldLink;
 			ALink newLink;
 			double oldWeight;
-			double newWeight;
+			//double newWeight;
 			Random rnd = new Random ();
 			double newError = 0;
 			double sum;
@@ -136,6 +136,7 @@ namespace ANeuralNetwork
 				}
 				iter++;
 			} while(oldError>accectableStdError && iter< maxIterations);
+            return newError;
 
 		}
 	}

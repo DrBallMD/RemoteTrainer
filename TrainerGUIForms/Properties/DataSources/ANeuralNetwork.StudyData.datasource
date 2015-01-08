@@ -6,5 +6,5 @@
     cause the file to be unrecognizable by the program.
 -->
 <GenericObjectDataSource DisplayName="StudyData" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-   <TypeInfo>TrainerGUIForms.ServiceReference1.StudyData, Service References.ServiceReference1.Reference.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
+   <TypeInfo>ANeuralNetwork.StudyData, ANeuralNetwork, Version=1.0.5485.31529, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>
