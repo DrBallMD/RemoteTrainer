@@ -50,20 +50,21 @@ namespace TrainerGUIForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            task = client.getTasks().Where(x => x.id == 3).First();
+            task = client.getTasks().Where(x => x.id == 4).First();
                 //new AISTask();
             //task.id = 6;
             //task.author = "test";
             //task.description = "neurotest";
             //task.name = "ffd";
             //task.ttype = TaskType.ArtificialNeuralNetwork;
-            string[] parametrs = new string[] { "10", "1", "8", "10", "0" };
+            //string[] parametrs = new string[] { "10", "1", "8", "10", "0" };
             //client.updateTask(
             //client.addTask(task, parametrs);
             //worker.RunWorkerAsync();
             int end = (int)numericUpDown2.Value;
             double error = (double)numericUpDown1.Value;
-            int id = task.id;
+            int id = 
+                task.id;
                 //client.getTasks().Last().id;
             network = client.getNeuralNetwork(id);
             double newError = network.study(genInputs(10, 10), genOutputs(10, 10), error, end);

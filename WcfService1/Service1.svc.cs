@@ -186,12 +186,15 @@ namespace WcfService1
         public byte[] GetAssembly(string name)
         {
             string dir = HostingEnvironment.ApplicationPhysicalPath+"\\bin\\GALibraries\\";
-            byte[] file = File.ReadAllBytes(dir+name+".dll");
+            byte[] file = File.ReadAllBytes(dir+name);
             return file;
         }
         public string[] GetAvailableGALibs()
         {
-            return null; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
+            AISdb.AISdb db = AISdb.AISdb.getInstance();
+            db.open(connstr);
+
+            return db.getGALibsNames().ToArray(); //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
         }
     }
 }

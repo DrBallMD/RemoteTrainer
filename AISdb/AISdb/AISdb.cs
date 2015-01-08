@@ -119,6 +119,20 @@ namespace AISdb
 			connection.Dispose ();
 			connection = null;
 		}
+        public List<string> getGALibsNames()
+        {
+            cmd.CommandText = "SELECT Name FROM GALibs;";
+            List<string> result = new List<string>();
+
+            IDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                result.Add(rd.GetString(0));
+            }
+            rd.Close();
+            rd = null;
+            return result;
+        }
 	}
 }
 

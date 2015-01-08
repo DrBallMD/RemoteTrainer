@@ -9,7 +9,7 @@ namespace ANeuralNetwork
 	{
 		public ANetwork(){
 		}
-		protected internal List<ALayer> layers;
+		public List<ALayer> layers;
 
 		public ANetwork (int inputNeurons, int hiddenLayers, int hiddenNeurons, int outputNeurons, int activation_func)
 		{
@@ -44,19 +44,19 @@ namespace ANeuralNetwork
 			layers.Add (last);
 			#endregion
 		}
-		protected internal void setInput(List<double> input){
+		public void setInput(List<double> input){
 			for (int i=0; i<layers[0].getNeuronsCount(); i++) {
 				layers[0].neurons[i].setOutput(input[i]);
 			}				                             
 		}
-		protected internal List<double> getResults(){
+		public List<double> getResults(){
 			List<double> result = new List<double> ();
 			foreach (ANeuron n in layers[layers.Count-1].neurons) {
 				result.Add (n.getOutput ());
 			}
 			return result;
 		}
-		protected internal void calcResult(){
+		public void calcResult(){
 			for (int i=1; i<layers.Count; i++) {
 				foreach (ANeuron n in layers[i].neurons) {
 					List<double> inp = new List<double> ();
@@ -67,7 +67,7 @@ namespace ANeuralNetwork
 				}
 			}
 		}
-		protected internal double calcStdError(List<double> correctAnwser){
+		public double calcStdError(List<double> correctAnwser){
 			double sum = 0;
 			List<double> res = getResults ();
 			for (int i = 0; i< correctAnwser.Count; i ++) {
