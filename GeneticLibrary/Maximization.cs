@@ -6,6 +6,7 @@ using System.Text;
 using AlgoLib;
 namespace GeneticLibrary
 {
+    [Serializable()]
     public class Maximization: IGenetical
     {
         protected internal double mutationRate;

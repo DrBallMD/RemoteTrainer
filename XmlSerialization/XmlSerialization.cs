@@ -44,7 +44,7 @@ namespace GenXmlSerialization
             textWriter.Flush();
             textWriter.Close();
         }
-        public static ICollection<T> DeserializeCollection<T>(string path)
+        public static ICollection<T> CollectionDeserialize<T>(string path)
         {
             XmlSerializer deserializer = new XmlSerializer(typeof(ICollection<T>));
             TextReader textReader = new StreamReader(path);
@@ -53,7 +53,7 @@ namespace GenXmlSerialization
             textReader.Close();
             return serializedData;
         }
-        public static ICollection<T> AdvancedDeserializeCollection<T>(string path)
+        public static ICollection<T> AdvancedCollectionDeserialize<T>(string path)
         {
             DataContractSerializer deserializer = new DataContractSerializer(typeof(ICollection<T>));
             XmlDictionaryReader textReader = XmlDictionaryReader.CreateTextReader(new StreamReader(path).BaseStream, Encoding.UTF8, new XmlDictionaryReaderQuotas(), null);
@@ -62,7 +62,7 @@ namespace GenXmlSerialization
             textReader.Close();
             return serializedData;
         }
-        public static T AdvancedDeserializeObject<T>(string path)
+        public static T AdvancedObjectDeserialize<T>(string path)
         {
             DataContractSerializer deserializer = new DataContractSerializer(typeof(T));
             XmlDictionaryReader textReader = XmlDictionaryReader.CreateTextReader(new StreamReader(path).BaseStream, Encoding.UTF8, new XmlDictionaryReaderQuotas(), null);
@@ -71,7 +71,7 @@ namespace GenXmlSerialization
             textReader.Close();
             return serializedData;
         }
-        public static T DeserializeObject<T>(string path)
+        public static T ObjectDeserialize<T>(string path)
         {
             XmlSerializer deserializer = new XmlSerializer(typeof(T));
             TextReader textReader = new StreamReader(path);

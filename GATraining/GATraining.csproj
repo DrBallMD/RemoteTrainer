@@ -122,6 +122,10 @@
       <Project>{499FDAFC-FEC6-4033-AB57-83AB4DA39A0D}</Project>
       <Name>AlgoLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XmlSerialization\XmlSerialization.csproj">
+      <Project>{442490d2-b14e-46a5-847e-d22a70334de6}</Project>
+      <Name>XmlSerialization</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />

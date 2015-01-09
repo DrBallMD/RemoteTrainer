@@ -15,19 +15,20 @@ namespace GATraining
         static ServiceReference1.Service1Client service = new ServiceReference1.Service1Client();
         static void Main(string[] args)
         {
-            //File.WriteAllBytes("GeneticLibrary.dll", service.GetAssembly());
-            Assembly assembly = Assembly.LoadFile(Directory.GetCurrentDirectory()+"\\GeneticLibrary.dll");
-            Type fooType = assembly.GetType("GeneticLibrary.Maximization");
-            IGenetical foo = Activator.CreateInstance(fooType, -50, 50, 3, 0.04) as IGenetical;
-            //List<int> result = new List<int>();
-            //Maximization aa = new Maximization(-50, 50, 3, 0.04);
-            for (int i = 1; i < 100; i++)
-            {
-                foo.NextGeneration();
-                //result.Add(aa.GetBest());
-                Console.WriteLine(foo.GetBest());
+            ////File.WriteAllBytes("GeneticLibrary.dll", service.GetAssembly());
+            //Assembly assembly = Assembly.LoadFile(Directory.GetCurrentDirectory()+"\\GeneticLibrary.dll");
+            //Type fooType = assembly.GetType("GeneticLibrary.Maximization");
+            //IGenetical foo = Activator.CreateInstance(fooType, -50, 50, 3, 0.04) as IGenetical;
+            ////List<int> result = new List<int>();
+            ////Maximization aa = new Maximization(-50, 50, 3, 0.04);
+            //for (int i = 1; i < 100; i++)
+            //{
+            //    foo.NextGeneration();
+            //    //result.Add(aa.GetBest());
+            //    Console.WriteLine(foo.GetBest());
 
-            }
+            //}
+            IGenetical aa = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<IGenetical>(Directory.GetCurrentDirectory() + "\\fs.xml");
             //result = result.Distinct().OrderByDescending(x => x).Take(4).ToList();
             //string[] arr = new string[result.Count];
             //for (int i = 0; i < result.Count; i++)

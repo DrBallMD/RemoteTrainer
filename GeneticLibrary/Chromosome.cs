@@ -5,6 +5,7 @@ using System.Text;
 
 namespace GeneticLibrary
 {
+    [Serializable()]
     public class Chromosome
     {
         public Chromosome()
