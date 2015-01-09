@@ -59,6 +59,7 @@ namespace WcfService1
                     FileStream file = File.Create(tt.fpath + "network.xml");
                     xs.Serialize(file, nn);
                     file.Close();
+                    tt.current_error = 100.0f;
                     break;
                 case AISdb.TaskType.GeneticAlgorithm:
                     tt.fpath = HostingEnvironment.ApplicationPhysicalPath + "AIS\\GA\\" + generatePath(tt.name + tt.author) + "\\";

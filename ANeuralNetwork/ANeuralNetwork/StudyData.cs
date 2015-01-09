@@ -8,6 +8,8 @@ namespace ANeuralNetwork
 		public List<double> output;
 		public StudyData ()
 		{
+            this.input = new List<double>();
+            this.output = new List<double>();
 		}
 	}
 }

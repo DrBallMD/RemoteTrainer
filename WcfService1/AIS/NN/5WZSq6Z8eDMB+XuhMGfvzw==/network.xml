@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<ANetwork xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <layers>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="0.49892103206316052" />
+            <l layer="0" neuron="1" weight="-0.32191170976586253" />
+            <l layer="0" neuron="2" weight="-0.22058330882367833" />
+            <l layer="0" neuron="3" weight="0.23214968886792176" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="0.39555938071364505" />
+            <l layer="0" neuron="1" weight="0.24865351419367521" />
+            <l layer="0" neuron="2" weight="-0.13292449509395493" />
+            <l layer="0" neuron="3" weight="-0.29425461068481884" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="1" neuron="0" weight="-0.15002734756564135" />
+            <l layer="1" neuron="1" weight="-0.16109466816349638" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="1" neuron="0" weight="0.036262141790363023" />
+            <l layer="1" neuron="1" weight="-0.34613649586501372" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="2" neuron="0" weight="-0.089116944740115167" />
+            <l layer="2" neuron="1" weight="0.084798663661255769" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="2" neuron="0" weight="0.17730994973206427" />
+            <l layer="2" neuron="1" weight="0.45474831431859564" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+  </layers>
+</ANetwork>
