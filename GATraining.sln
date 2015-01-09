@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainerGUIForms", "TrainerG
 		{AFFAA7FD-DF66-4B6D-B459-F10A8B42A319} = {AFFAA7FD-DF66-4B6D-B459-F10A8B42A319}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlSerialization", "XmlSerialization\XmlSerialization.csproj", "{442490D2-B14E-46A5-847E-D22A70334DE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,14 @@ Global
 		{6620AADB-5BA5-45E4-B565-0B268E9385EA}.Release|x64.Build.0 = Release|x64
 		{6620AADB-5BA5-45E4-B565-0B268E9385EA}.Release|x86.ActiveCfg = Release|x86
 		{6620AADB-5BA5-45E4-B565-0B268E9385EA}.Release|x86.Build.0 = Release|x86
+		{442490D2-B14E-46A5-847E-D22A70334DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{442490D2-B14E-46A5-847E-D22A70334DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{442490D2-B14E-46A5-847E-D22A70334DE6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{442490D2-B14E-46A5-847E-D22A70334DE6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{442490D2-B14E-46A5-847E-D22A70334DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{442490D2-B14E-46A5-847E-D22A70334DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{442490D2-B14E-46A5-847E-D22A70334DE6}.Release|x64.ActiveCfg = Release|Any CPU
+		{442490D2-B14E-46A5-847E-D22A70334DE6}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
