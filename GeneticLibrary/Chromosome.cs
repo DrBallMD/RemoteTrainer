@@ -7,6 +7,9 @@ namespace GeneticLibrary
 {
     public class Chromosome
     {
+        public Chromosome()
+        {
+        }
         public Chromosome(char[] bitarray)
         {
             this.bits = new char[bitarray.Length];
