@@ -1,0 +1,2309 @@
+<?xml version="1.0"?>
+<ANetwork xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <layers>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+            <l layer="0" neuron="0" weight="1" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="0.2016122726265398" />
+            <l layer="0" neuron="1" weight="0.39390313806659694" />
+            <l layer="0" neuron="2" weight="-0.15122627823205026" />
+            <l layer="0" neuron="3" weight="-0.25828177796596741" />
+            <l layer="0" neuron="4" weight="-0.30485740527736838" />
+            <l layer="0" neuron="5" weight="0.3269414384043503" />
+            <l layer="0" neuron="6" weight="0.12351378175593619" />
+            <l layer="0" neuron="7" weight="0.42623439055226486" />
+            <l layer="0" neuron="8" weight="-0.1708695067422788" />
+            <l layer="0" neuron="9" weight="0.44568736010495913" />
+            <l layer="0" neuron="10" weight="-0.11420296626826887" />
+            <l layer="0" neuron="11" weight="-0.040336703201912683" />
+            <l layer="0" neuron="12" weight="-0.39340658900020953" />
+            <l layer="0" neuron="13" weight="-0.19928939905915849" />
+            <l layer="0" neuron="14" weight="0.38729347097095734" />
+            <l layer="0" neuron="15" weight="-0.21882782304604903" />
+            <l layer="0" neuron="16" weight="0.11327834362782463" />
+            <l layer="0" neuron="17" weight="0.27686277813132054" />
+            <l layer="0" neuron="18" weight="-0.23848108469437856" />
+            <l layer="0" neuron="19" weight="0.1604348596466868" />
+            <l layer="0" neuron="20" weight="0.039953680494778654" />
+            <l layer="0" neuron="21" weight="0.42436153764108264" />
+            <l layer="0" neuron="22" weight="0.22217617031288151" />
+            <l layer="0" neuron="23" weight="0.11719198320861535" />
+            <l layer="0" neuron="24" weight="-0.14990806935816448" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="-0.26652324235370534" />
+            <l layer="0" neuron="1" weight="-0.43399756445269921" />
+            <l layer="0" neuron="2" weight="-0.13716856466474409" />
+            <l layer="0" neuron="3" weight="-0.029541068491312217" />
+            <l layer="0" neuron="4" weight="0.49582558730422777" />
+            <l layer="0" neuron="5" weight="-0.23578172909830775" />
+            <l layer="0" neuron="6" weight="-0.3902732217173433" />
+            <l layer="0" neuron="7" weight="0.052048689011507054" />
+            <l layer="0" neuron="8" weight="0.050666911783938673" />
+            <l layer="0" neuron="9" weight="0.027848631855029948" />
+            <l layer="0" neuron="10" weight="0.43072688669465808" />
+            <l layer="0" neuron="11" weight="0.41585718091384372" />
+            <l layer="0" neuron="12" weight="-0.26488116419170105" />
+            <l layer="0" neuron="13" weight="-0.028551728710789093" />
+            <l layer="0" neuron="14" weight="0.37787887681176835" />
+            <l layer="0" neuron="15" weight="-0.058792583904598184" />
+            <l layer="0" neuron="16" weight="0.18348466636775274" />
+            <l layer="0" neuron="17" weight="0.13688893366460175" />
+            <l layer="0" neuron="18" weight="-0.41048365966905076" />
+            <l layer="0" neuron="19" weight="0.20772019806677489" />
+            <l layer="0" neuron="20" weight="-0.035202220797167283" />
+            <l layer="0" neuron="21" weight="-0.32297955212322044" />
+            <l layer="0" neuron="22" weight="0.3711623804975126" />
+            <l layer="0" neuron="23" weight="-0.4306684867156057" />
+            <l layer="0" neuron="24" weight="0.11807589680798158" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="0" neuron="0" weight="0.4750772868167038" />
+            <l layer="0" neuron="1" weight="-0.43632755146190877" />
+            <l layer="0" neuron="2" weight="0.0646960477180295" />
+            <l layer="0" neuron="3" weight="0.31889661951870496" />
+            <l layer="0" neuron="4" weight="0.142478322443775" />
+            <l layer="0" neuron="5" weight="0.27725073498545716" />
+            <l layer="0" neuron="6" weight="-0.32827303224628468" />
+            <l layer="0" neuron="7" weight="0.23158173855933439" />
+            <l layer="0" neuron="8" weight="0.39162629139219707" />
+            <l layer="0" neuron="9" weight="0.461665837076337" />
+            <l layer="0" neuron="10" weight="0.26093900285704952" />
+            <l layer="0" neuron="11" weight="-0.23931765357931967" />
+            <l layer="0" neuron="12" weight="-0.04422454095642292" />
+            <l layer="0" neuron="13" weight="-0.16669509404650662" />
+            <l layer="0" neuron="14" weight="0.181469089203267" />
+            <l layer="0" neuron="15" weight="-0.22392974455092557" />
+            <l layer="0" neuron="16" weight="0.40761460778658032" />
+            <l layer="0" neuron="17" weight="0.0559264992158518" />
+            <l layer="0" neuron="18" weight="0.27286196908581162" />
+            <l layer="0" neuron="19" weight="0.45656658427629926" />
+            <l layer="0" neuron="20" weight="-0.1346850039598928" />
+            <l layer="0" neuron="21" weight="-0.12184049218047433" />
+            <l layer="0" neuron="22" weight="-0.19458549315789037" />
+            <l layer="0" neuron="23" weight="-0.11635996150614691" />
+            <l layer="0" neuron="24" weight="-0.28077255644871507" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="1" neuron="0" weight="0.35646901412702581" />
+            <l layer="1" neuron="1" weight="-0.21252739602351906" />
+            <l layer="1" neuron="2" weight="0.13265982998193238" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="1" neuron="0" weight="0.40947178514184046" />
+            <l layer="1" neuron="1" weight="0.38529415143900281" />
+            <l layer="1" neuron="2" weight="-0.4435436902304849" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="1" neuron="0" weight="-0.30515994495021176" />
+            <l layer="1" neuron="1" weight="-0.20650007794913838" />
+            <l layer="1" neuron="2" weight="0.3523830347007062" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="2" neuron="0" weight="-0.479251699512476" />
+            <l layer="2" neuron="1" weight="-0.29945417763639903" />
+            <l layer="2" neuron="2" weight="0.045030730564627253" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="2" neuron="0" weight="0.23315206949280209" />
+            <l layer="2" neuron="1" weight="0.40818858934016367" />
+            <l layer="2" neuron="2" weight="0.25059789686957279" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="2" neuron="0" weight="0.25899991894094265" />
+            <l layer="2" neuron="1" weight="-0.31572455764549068" />
+            <l layer="2" neuron="2" weight="-0.15650745558389811" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="3" neuron="0" weight="0.0097824342128739472" />
+            <l layer="3" neuron="1" weight="-0.38306012604528111" />
+            <l layer="3" neuron="2" weight="-0.31947493032527852" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="3" neuron="0" weight="-0.27229079267582423" />
+            <l layer="3" neuron="1" weight="-0.19641597228889168" />
+            <l layer="3" neuron="2" weight="-0.091952748872317747" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="3" neuron="0" weight="-0.0683500573822996" />
+            <l layer="3" neuron="1" weight="0.05718317141625251" />
+            <l layer="3" neuron="2" weight="0.12109394866092782" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="4" neuron="0" weight="-0.401699588588299" />
+            <l layer="4" neuron="1" weight="-0.38723507099190496" />
+            <l layer="4" neuron="2" weight="-0.24723909923212561" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="4" neuron="0" weight="0.096917778997178128" />
+            <l layer="4" neuron="1" weight="0.2582579416959816" />
+            <l layer="4" neuron="2" weight="-0.31894399077582358" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="4" neuron="0" weight="0.099669175967420087" />
+            <l layer="4" neuron="1" weight="0.2860093083167492" />
+            <l layer="4" neuron="2" weight="-0.010221868991023786" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="5" neuron="0" weight="0.039067137771782945" />
+            <l layer="5" neuron="1" weight="0.32210995341749393" />
+            <l layer="5" neuron="2" weight="-0.49366786004680574" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="5" neuron="0" weight="0.40520952730682192" />
+            <l layer="5" neuron="1" weight="0.066098947807261221" />
+            <l layer="5" neuron="2" weight="0.46718242436981872" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="5" neuron="0" weight="0.10339242434287088" />
+            <l layer="5" neuron="1" weight="-0.18744339453403064" />
+            <l layer="5" neuron="2" weight="-0.019076733160334036" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="6" neuron="0" weight="0.23103952488444723" />
+            <l layer="6" neuron="1" weight="-0.32553746170622178" />
+            <l layer="6" neuron="2" weight="0.14773790987568813" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="6" neuron="0" weight="-0.47773592778376112" />
+            <l layer="6" neuron="1" weight="-0.30243333466464339" />
+            <l layer="6" neuron="2" weight="-0.31896044631440212" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="6" neuron="0" weight="-0.46533303659657621" />
+            <l layer="6" neuron="1" weight="0.29563207262923574" />
+            <l layer="6" neuron="2" weight="-0.2332998354608658" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="7" neuron="0" weight="-0.46129762612343655" />
+            <l layer="7" neuron="1" weight="0.12875980680285015" />
+            <l layer="7" neuron="2" weight="0.48388857626537263" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="7" neuron="0" weight="-0.27538742114574993" />
+            <l layer="7" neuron="1" weight="-0.022178157475859939" />
+            <l layer="7" neuron="2" weight="-0.1718890199772497" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="7" neuron="0" weight="-0.064637638891412719" />
+            <l layer="7" neuron="1" weight="-0.40346035636191274" />
+            <l layer="7" neuron="2" weight="-0.31926500695723342" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="8" neuron="0" weight="0.099622133932831813" />
+            <l layer="8" neuron="1" weight="-0.076169478509654054" />
+            <l layer="8" neuron="2" weight="-0.057712119332380629" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="8" neuron="0" weight="-0.13602527865954922" />
+            <l layer="8" neuron="1" weight="-0.366517106474618" />
+            <l layer="8" neuron="2" weight="-0.37782071897658553" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="8" neuron="0" weight="-0.23918023413940343" />
+            <l layer="8" neuron="1" weight="-0.28006721883084029" />
+            <l layer="8" neuron="2" weight="-0.13783451106298461" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="9" neuron="0" weight="-0.16283959553709237" />
+            <l layer="9" neuron="1" weight="0.10457290690605203" />
+            <l layer="9" neuron="2" weight="0.05084092614745761" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="9" neuron="0" weight="-0.28665735469509723" />
+            <l layer="9" neuron="1" weight="0.12431678298130477" />
+            <l layer="9" neuron="2" weight="0.49102742224513896" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="9" neuron="0" weight="0.42712398428801635" />
+            <l layer="9" neuron="1" weight="0.20061041773325317" />
+            <l layer="9" neuron="2" weight="-0.11727936687752577" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="10" neuron="0" weight="0.47335603878523969" />
+            <l layer="10" neuron="1" weight="-0.4239636608045379" />
+            <l layer="10" neuron="2" weight="0.41519826367273849" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="10" neuron="0" weight="-0.42827865291772349" />
+            <l layer="10" neuron="1" weight="0.062250815593754338" />
+            <l layer="10" neuron="2" weight="0.46262586906674596" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="10" neuron="0" weight="0.41435584468504216" />
+            <l layer="10" neuron="1" weight="0.060966802090856587" />
+            <l layer="10" neuron="2" weight="-0.34275049848610095" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="11" neuron="0" weight="0.0058895547436036422" />
+            <l layer="11" neuron="1" weight="-0.18554544108246707" />
+            <l layer="11" neuron="2" weight="-0.15571188910664613" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="11" neuron="0" weight="0.17822115993044396" />
+            <l layer="11" neuron="1" weight="-0.030152833801765366" />
+            <l layer="11" neuron="2" weight="-0.030440695830826037" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="11" neuron="0" weight="0.28644743132705219" />
+            <l layer="11" neuron="1" weight="-0.49622970958996088" />
+            <l layer="11" neuron="2" weight="0.38872608397562336" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="12" neuron="0" weight="-0.46136461382795341" />
+            <l layer="12" neuron="1" weight="-0.13293519645600355" />
+            <l layer="12" neuron="2" weight="-0.45902035523160378" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="12" neuron="0" weight="0.025558628852273668" />
+            <l layer="12" neuron="1" weight="0.26144430635564231" />
+            <l layer="12" neuron="2" weight="0.4776338841661969" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="12" neuron="0" weight="0.31887406474858249" />
+            <l layer="12" neuron="1" weight="0.19750655894051616" />
+            <l layer="12" neuron="2" weight="-0.30894083427681629" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="13" neuron="0" weight="0.21585923839167653" />
+            <l layer="13" neuron="1" weight="0.32535972857166073" />
+            <l layer="13" neuron="2" weight="-0.49555697617845468" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="13" neuron="0" weight="0.49286115402023367" />
+            <l layer="13" neuron="1" weight="-0.20251140543376628" />
+            <l layer="13" neuron="2" weight="0.2772114247908869" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="13" neuron="0" weight="0.44539034690027612" />
+            <l layer="13" neuron="1" weight="-0.037993677676652404" />
+            <l layer="13" neuron="2" weight="-0.47949669555737484" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="14" neuron="0" weight="-0.23446327062997185" />
+            <l layer="14" neuron="1" weight="0.027900786850555193" />
+            <l layer="14" neuron="2" weight="0.36157970589659161" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="14" neuron="0" weight="-0.020337988399126539" />
+            <l layer="14" neuron="1" weight="-0.050381123344591383" />
+            <l layer="14" neuron="2" weight="0.07251609143452542" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="14" neuron="0" weight="0.46492977950951542" />
+            <l layer="14" neuron="1" weight="0.254930211116993" />
+            <l layer="14" neuron="2" weight="0.40547822225162677" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="15" neuron="0" weight="-0.48212262195633848" />
+            <l layer="15" neuron="1" weight="0.15893924453246378" />
+            <l layer="15" neuron="2" weight="-0.3652742592921826" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="15" neuron="0" weight="-0.4187183780217163" />
+            <l layer="15" neuron="1" weight="-0.073104786022149371" />
+            <l layer="15" neuron="2" weight="0.12054649257126571" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="15" neuron="0" weight="-0.3976986617304844" />
+            <l layer="15" neuron="1" weight="0.3884885981159697" />
+            <l layer="15" neuron="2" weight="-0.16645438581074329" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="16" neuron="0" weight="-0.158259011645922" />
+            <l layer="16" neuron="1" weight="-0.052202590067033927" />
+            <l layer="16" neuron="2" weight="-0.18540796716018021" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="16" neuron="0" weight="0.43756437950654159" />
+            <l layer="16" neuron="1" weight="-0.24715271766630592" />
+            <l layer="16" neuron="2" weight="0.36474425665323817" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="16" neuron="0" weight="0.27156670334356214" />
+            <l layer="16" neuron="1" weight="-0.30150339370663437" />
+            <l layer="16" neuron="2" weight="0.23560707351919596" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="17" neuron="0" weight="-0.34719352230764622" />
+            <l layer="17" neuron="1" weight="0.013028400723369971" />
+            <l layer="17" neuron="2" weight="-0.48303403564870079" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="17" neuron="0" weight="0.067076686102466976" />
+            <l layer="17" neuron="1" weight="0.23283081303016784" />
+            <l layer="17" neuron="2" weight="-0.49215915612511296" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="17" neuron="0" weight="-0.050944000273451195" />
+            <l layer="17" neuron="1" weight="0.020910701957024047" />
+            <l layer="17" neuron="2" weight="-0.024130496440516069" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="18" neuron="0" weight="-0.47285362192096825" />
+            <l layer="18" neuron="1" weight="0.058973374571173132" />
+            <l layer="18" neuron="2" weight="0.41744592688858784" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="18" neuron="0" weight="-0.031536446666129148" />
+            <l layer="18" neuron="1" weight="0.060628849342758251" />
+            <l layer="18" neuron="2" weight="-0.49348590476135068" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="18" neuron="0" weight="-0.42784433808542988" />
+            <l layer="18" neuron="1" weight="0.30099668670492097" />
+            <l layer="18" neuron="2" weight="-0.46143268559194761" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="19" neuron="0" weight="-0.44366657498463363" />
+            <l layer="19" neuron="1" weight="0.13457761641339283" />
+            <l layer="19" neuron="2" weight="-0.1015354854061899" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="19" neuron="0" weight="-0.11610346874972033" />
+            <l layer="19" neuron="1" weight="0.39055981575071808" />
+            <l layer="19" neuron="2" weight="-0.091000003549735975" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="19" neuron="0" weight="-0.056334189398369816" />
+            <l layer="19" neuron="1" weight="0.10364935854619806" />
+            <l layer="19" neuron="2" weight="-0.48579108760961848" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="20" neuron="0" weight="0.20591127160280531" />
+            <l layer="20" neuron="1" weight="-0.1720276501365135" />
+            <l layer="20" neuron="2" weight="-0.22494649548313883" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="20" neuron="0" weight="0.49683544924335343" />
+            <l layer="20" neuron="1" weight="0.20809530825731126" />
+            <l layer="20" neuron="2" weight="-0.24887772963795707" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="20" neuron="0" weight="0.33690901791532946" />
+            <l layer="20" neuron="1" weight="0.31212330181716164" />
+            <l layer="20" neuron="2" weight="-0.258098189606377" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="21" neuron="0" weight="0.38851225790032762" />
+            <l layer="21" neuron="1" weight="-0.049199308058805458" />
+            <l layer="21" neuron="2" weight="0.42610843150229583" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="21" neuron="0" weight="-0.37311510316706964" />
+            <l layer="21" neuron="1" weight="0.13222562225173484" />
+            <l layer="21" neuron="2" weight="0.40598451202082653" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="21" neuron="0" weight="-0.35532301098821828" />
+            <l layer="21" neuron="1" weight="-0.42484503980951616" />
+            <l layer="21" neuron="2" weight="-0.17048477645520344" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="22" neuron="0" weight="-0.083900312699331125" />
+            <l layer="22" neuron="1" weight="0.37327743502020716" />
+            <l layer="22" neuron="2" weight="0.38716856059020788" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="22" neuron="0" weight="-0.19192206239882953" />
+            <l layer="22" neuron="1" weight="0.36540871759197147" />
+            <l layer="22" neuron="2" weight="-0.048149404371226834" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="22" neuron="0" weight="0.32617694224518579" />
+            <l layer="22" neuron="1" weight="0.21523327832819583" />
+            <l layer="22" neuron="2" weight="0.0639189898799728" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="23" neuron="0" weight="-0.16285744107461414" />
+            <l layer="23" neuron="1" weight="0.26890994644207411" />
+            <l layer="23" neuron="2" weight="0.1224685849726519" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="23" neuron="0" weight="0.10796596790103519" />
+            <l layer="23" neuron="1" weight="-0.37658912449916315" />
+            <l layer="23" neuron="2" weight="-0.37081854551603022" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="23" neuron="0" weight="0.49363193148450546" />
+            <l layer="23" neuron="1" weight="0.24314472812374344" />
+            <l layer="23" neuron="2" weight="-0.30706164790646251" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="24" neuron="0" weight="-0.29918400095737729" />
+            <l layer="24" neuron="1" weight="-0.46968907116432168" />
+            <l layer="24" neuron="2" weight="0.35087806631386187" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="24" neuron="0" weight="0.16632365652654491" />
+            <l layer="24" neuron="1" weight="0.13155453541854145" />
+            <l layer="24" neuron="2" weight="0.24850554752559662" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="24" neuron="0" weight="0.2646122848450263" />
+            <l layer="24" neuron="1" weight="-0.31635659598575749" />
+            <l layer="24" neuron="2" weight="-0.14980400523627363" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="25" neuron="0" weight="-0.38754111709424344" />
+            <l layer="25" neuron="1" weight="0.42944852818243606" />
+            <l layer="25" neuron="2" weight="-0.497648005838342" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="25" neuron="0" weight="-0.0075199974270164782" />
+            <l layer="25" neuron="1" weight="-0.2607804577615021" />
+            <l layer="25" neuron="2" weight="0.31540485556023423" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="25" neuron="0" weight="-0.4205152270945326" />
+            <l layer="25" neuron="1" weight="-0.47243387669903875" />
+            <l layer="25" neuron="2" weight="0.2303719235259909" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="26" neuron="0" weight="-0.3729596481998263" />
+            <l layer="26" neuron="1" weight="-0.1021666659983651" />
+            <l layer="26" neuron="2" weight="-0.037436367728484965" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="26" neuron="0" weight="0.323202908888088" />
+            <l layer="26" neuron="1" weight="-0.32934149300183235" />
+            <l layer="26" neuron="2" weight="0.49286202992911543" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="26" neuron="0" weight="0.18720328048207013" />
+            <l layer="26" neuron="1" weight="-0.00023354101005640393" />
+            <l layer="26" neuron="2" weight="-0.45678664462491247" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="27" neuron="0" weight="0.11943322542097101" />
+            <l layer="27" neuron="1" weight="-0.21945371000070763" />
+            <l layer="27" neuron="2" weight="-0.17261018355964225" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="27" neuron="0" weight="0.29692697701832604" />
+            <l layer="27" neuron="1" weight="-0.36674703465157515" />
+            <l layer="27" neuron="2" weight="0.38908089412799152" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="27" neuron="0" weight="0.21304615992728904" />
+            <l layer="27" neuron="1" weight="0.443860989969159" />
+            <l layer="27" neuron="2" weight="-0.45515596864519453" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="28" neuron="0" weight="-0.02136284276906536" />
+            <l layer="28" neuron="1" weight="0.24977603077412403" />
+            <l layer="28" neuron="2" weight="-0.25827710039833429" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="28" neuron="0" weight="-0.36133698693538874" />
+            <l layer="28" neuron="1" weight="0.043465652756144113" />
+            <l layer="28" neuron="2" weight="0.18176531357772896" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="28" neuron="0" weight="-0.39834539913495326" />
+            <l layer="28" neuron="1" weight="0.21371805933942933" />
+            <l layer="28" neuron="2" weight="0.28578475014575977" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="29" neuron="0" weight="0.06156699571831481" />
+            <l layer="29" neuron="1" weight="0.34466255635240239" />
+            <l layer="29" neuron="2" weight="0.029690404203576271" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="29" neuron="0" weight="0.30706372941241777" />
+            <l layer="29" neuron="1" weight="0.028481194995567782" />
+            <l layer="29" neuron="2" weight="-0.40415524780012446" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="29" neuron="0" weight="-0.10119046904202106" />
+            <l layer="29" neuron="1" weight="0.36659157968433187" />
+            <l layer="29" neuron="2" weight="-0.15468860587789146" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="30" neuron="0" weight="0.23037471982202251" />
+            <l layer="30" neuron="1" weight="-0.1223869098454653" />
+            <l layer="30" neuron="2" weight="0.35965242183751078" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="30" neuron="0" weight="0.35801603638474644" />
+            <l layer="30" neuron="1" weight="0.47912037604447477" />
+            <l layer="30" neuron="2" weight="-0.3682119235714022" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="30" neuron="0" weight="0.20529219215050909" />
+            <l layer="30" neuron="1" weight="-0.35482094057594471" />
+            <l layer="30" neuron="2" weight="0.40309711401495019" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="31" neuron="0" weight="-0.47719382167663138" />
+            <l layer="31" neuron="1" weight="-0.18446809411256954" />
+            <l layer="31" neuron="2" weight="0.29619556283401116" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="31" neuron="0" weight="-0.38672889996633347" />
+            <l layer="31" neuron="1" weight="0.27943384264569437" />
+            <l layer="31" neuron="2" weight="-0.20464144773066112" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="31" neuron="0" weight="0.27056082420542871" />
+            <l layer="31" neuron="1" weight="0.10084761567453282" />
+            <l layer="31" neuron="2" weight="-0.22220990747316272" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="32" neuron="0" weight="-0.011350976075674868" />
+            <l layer="32" neuron="1" weight="0.48837733873556244" />
+            <l layer="32" neuron="2" weight="0.35436768124549078" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="32" neuron="0" weight="0.28079831869378613" />
+            <l layer="32" neuron="1" weight="0.22154830802304126" />
+            <l layer="32" neuron="2" weight="-0.043059552341261687" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="32" neuron="0" weight="-0.29292272021664434" />
+            <l layer="32" neuron="1" weight="-0.37436371523624457" />
+            <l layer="32" neuron="2" weight="0.15510390263754126" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="33" neuron="0" weight="0.013522951171511255" />
+            <l layer="33" neuron="1" weight="0.31236949600855335" />
+            <l layer="33" neuron="2" weight="0.25206509500372465" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="33" neuron="0" weight="-0.26845493575951779" />
+            <l layer="33" neuron="1" weight="-0.1018825539396529" />
+            <l layer="33" neuron="2" weight="-0.23333861433590697" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="33" neuron="0" weight="0.043769500005882978" />
+            <l layer="33" neuron="1" weight="0.48267144010526664" />
+            <l layer="33" neuron="2" weight="0.066247899814624311" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="34" neuron="0" weight="-0.31480839048270526" />
+            <l layer="34" neuron="1" weight="0.12062112084618826" />
+            <l layer="34" neuron="2" weight="0.27065565472964925" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="34" neuron="0" weight="-0.39006517682693209" />
+            <l layer="34" neuron="1" weight="-0.066629179085897827" />
+            <l layer="34" neuron="2" weight="-0.10171340666791118" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="34" neuron="0" weight="0.27866819956277877" />
+            <l layer="34" neuron="1" weight="-0.42115157745832188" />
+            <l layer="34" neuron="2" weight="-0.10181384654800119" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="35" neuron="0" weight="0.48958918731174861" />
+            <l layer="35" neuron="1" weight="-0.051704104315351718" />
+            <l layer="35" neuron="2" weight="-0.43477128629329209" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="35" neuron="0" weight="-0.26566814806576267" />
+            <l layer="35" neuron="1" weight="-0.46349709479301104" />
+            <l layer="35" neuron="2" weight="0.42763357932103496" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="35" neuron="0" weight="0.31805465967303825" />
+            <l layer="35" neuron="1" weight="0.41016050703365381" />
+            <l layer="35" neuron="2" weight="0.37821424094876943" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="36" neuron="0" weight="-0.0090562871233822451" />
+            <l layer="36" neuron="1" weight="0.44957640112823638" />
+            <l layer="36" neuron="2" weight="0.15606478213149344" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="36" neuron="0" weight="-0.097288025821227586" />
+            <l layer="36" neuron="1" weight="0.15093875660139078" />
+            <l layer="36" neuron="2" weight="0.35348409128071934" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="36" neuron="0" weight="-0.023315826208943402" />
+            <l layer="36" neuron="1" weight="-0.30823075902100222" />
+            <l layer="36" neuron="2" weight="-0.167190436584498" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="37" neuron="0" weight="-0.34896798098877446" />
+            <l layer="37" neuron="1" weight="0.29126111408288646" />
+            <l layer="37" neuron="2" weight="0.41741445982708336" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="37" neuron="0" weight="0.02953417716991813" />
+            <l layer="37" neuron="1" weight="0.0695016000277836" />
+            <l layer="37" neuron="2" weight="0.29676240254042785" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="37" neuron="0" weight="0.22911065245471463" />
+            <l layer="37" neuron="1" weight="0.085369214688133965" />
+            <l layer="37" neuron="2" weight="0.48022649482834456" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="38" neuron="0" weight="0.0071344377971880313" />
+            <l layer="38" neuron="1" weight="-0.12128579924874278" />
+            <l layer="38" neuron="2" weight="0.055006517821460266" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="38" neuron="0" weight="-0.043918912086598094" />
+            <l layer="38" neuron="1" weight="-0.4978698808689927" />
+            <l layer="38" neuron="2" weight="0.14269988548136314" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="38" neuron="0" weight="-0.44124570579326045" />
+            <l layer="38" neuron="1" weight="-0.28251190752839295" />
+            <l layer="38" neuron="2" weight="0.17734038907910721" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="39" neuron="0" weight="0.08987518893083335" />
+            <l layer="39" neuron="1" weight="-0.22080890076272602" />
+            <l layer="39" neuron="2" weight="0.27586659080156428" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="39" neuron="0" weight="0.32443151568268958" />
+            <l layer="39" neuron="1" weight="-0.086509595432556041" />
+            <l layer="39" neuron="2" weight="-0.012043060973306707" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="39" neuron="0" weight="-0.11155285528467634" />
+            <l layer="39" neuron="1" weight="-0.44717421287073483" />
+            <l layer="39" neuron="2" weight="-0.4669049610229698" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="40" neuron="0" weight="0.41018311768313087" />
+            <l layer="40" neuron="1" weight="0.28247963533852227" />
+            <l layer="40" neuron="2" weight="0.46968236424479748" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="40" neuron="0" weight="0.41717156344892992" />
+            <l layer="40" neuron="1" weight="0.13325064938201137" />
+            <l layer="40" neuron="2" weight="-0.25839842006489561" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="40" neuron="0" weight="-0.43452297008341317" />
+            <l layer="40" neuron="1" weight="0.12763618055155324" />
+            <l layer="40" neuron="2" weight="-0.21241269154120829" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="41" neuron="0" weight="-0.019228306375084603" />
+            <l layer="41" neuron="1" weight="-0.039944989858169577" />
+            <l layer="41" neuron="2" weight="0.37879429565686462" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="41" neuron="0" weight="-0.23153368883371989" />
+            <l layer="41" neuron="1" weight="0.005221199479522709" />
+            <l layer="41" neuron="2" weight="-0.048866309481145009" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="41" neuron="0" weight="0.4474070844926904" />
+            <l layer="41" neuron="1" weight="-0.18907977812414978" />
+            <l layer="41" neuron="2" weight="0.03144630628239653" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="42" neuron="0" weight="-0.17679227687269089" />
+            <l layer="42" neuron="1" weight="-0.46513737503678415" />
+            <l layer="42" neuron="2" weight="0.44744628199722913" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="42" neuron="0" weight="-0.48663510334986965" />
+            <l layer="42" neuron="1" weight="-0.15604232002796714" />
+            <l layer="42" neuron="2" weight="-0.066549335870216275" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="42" neuron="0" weight="-0.32385629779838787" />
+            <l layer="42" neuron="1" weight="0.38680898486022319" />
+            <l layer="42" neuron="2" weight="0.4125781417417238" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="43" neuron="0" weight="0.056942972613937659" />
+            <l layer="43" neuron="1" weight="-0.17339949667146404" />
+            <l layer="43" neuron="2" weight="-0.12222929048455755" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="43" neuron="0" weight="-0.070542479199609931" />
+            <l layer="43" neuron="1" weight="-0.35891296754540547" />
+            <l layer="43" neuron="2" weight="0.016675812898518383" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="43" neuron="0" weight="0.26366736356339759" />
+            <l layer="43" neuron="1" weight="0.31892753477158375" />
+            <l layer="43" neuron="2" weight="0.30288957934961169" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="44" neuron="0" weight="-0.48945586941645286" />
+            <l layer="44" neuron="1" weight="0.089962874348258115" />
+            <l layer="44" neuron="2" weight="0.24546355136924591" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="44" neuron="0" weight="-0.18659506211364413" />
+            <l layer="44" neuron="1" weight="-0.10939594200318492" />
+            <l layer="44" neuron="2" weight="-0.12550606142054593" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="44" neuron="0" weight="-0.14488742297742863" />
+            <l layer="44" neuron="1" weight="0.077982600581824157" />
+            <l layer="44" neuron="2" weight="0.25743308232977669" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="45" neuron="0" weight="0.29854609342224248" />
+            <l layer="45" neuron="1" weight="-0.17859112223544676" />
+            <l layer="45" neuron="2" weight="0.27396989975775121" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="45" neuron="0" weight="-0.17526709971729065" />
+            <l layer="45" neuron="1" weight="0.37702443118999918" />
+            <l layer="45" neuron="2" weight="-0.39742981730840626" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="45" neuron="0" weight="0.45651063274429671" />
+            <l layer="45" neuron="1" weight="-0.43476057841198545" />
+            <l layer="45" neuron="2" weight="-0.48203683783395068" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="46" neuron="0" weight="-0.41435124302019888" />
+            <l layer="46" neuron="1" weight="0.39681822103300046" />
+            <l layer="46" neuron="2" weight="-0.061478044633510531" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="46" neuron="0" weight="0.036231700115013754" />
+            <l layer="46" neuron="1" weight="0.24102786124731779" />
+            <l layer="46" neuron="2" weight="0.24644166452178806" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="46" neuron="0" weight="-0.17097656180661941" />
+            <l layer="46" neuron="1" weight="0.0085340573026491118" />
+            <l layer="46" neuron="2" weight="-0.19896432277698273" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="47" neuron="0" weight="0.40981659894334921" />
+            <l layer="47" neuron="1" weight="-0.44868582717547467" />
+            <l layer="47" neuron="2" weight="-0.18103202231276411" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="47" neuron="0" weight="-0.13788151724165376" />
+            <l layer="47" neuron="1" weight="0.004798947602882464" />
+            <l layer="47" neuron="2" weight="0.18629366470793896" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="47" neuron="0" weight="0.1482441111692433" />
+            <l layer="47" neuron="1" weight="0.43686295390914331" />
+            <l layer="47" neuron="2" weight="0.22095734752759211" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="48" neuron="0" weight="0.28598275491315073" />
+            <l layer="48" neuron="1" weight="-0.49019721475904676" />
+            <l layer="48" neuron="2" weight="0.14425856696640071" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="48" neuron="0" weight="0.072952343417775012" />
+            <l layer="48" neuron="1" weight="0.15825231962755892" />
+            <l layer="48" neuron="2" weight="0.2659750793902087" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="48" neuron="0" weight="0.17601758180000704" />
+            <l layer="48" neuron="1" weight="-0.12240239122063035" />
+            <l layer="48" neuron="2" weight="0.065400107095670013" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="49" neuron="0" weight="-0.36139175801602741" />
+            <l layer="49" neuron="1" weight="-0.26778992766877163" />
+            <l layer="49" neuron="2" weight="-0.050423927861463269" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="49" neuron="0" weight="-0.22479947317615129" />
+            <l layer="49" neuron="1" weight="-0.027053111943906694" />
+            <l layer="49" neuron="2" weight="-0.42415238913342" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="49" neuron="0" weight="-0.0012873492675308795" />
+            <l layer="49" neuron="1" weight="0.17801860658359647" />
+            <l layer="49" neuron="2" weight="0.42210931373858329" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+    <ALayer>
+      <Neurons>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="-0.13563237601687778" />
+            <l layer="50" neuron="1" weight="-0.025687569531466614" />
+            <l layer="50" neuron="2" weight="0.34893501310094033" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="0.49902188684745774" />
+            <l layer="50" neuron="1" weight="0.48438149969297528" />
+            <l layer="50" neuron="2" weight="0.38207000069416597" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="-0.42654173864356326" />
+            <l layer="50" neuron="1" weight="-0.05470402192077789" />
+            <l layer="50" neuron="2" weight="0.026668427757298718" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="-0.061534895357459263" />
+            <l layer="50" neuron="1" weight="-0.063572389336103763" />
+            <l layer="50" neuron="2" weight="0.31660993016167072" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="-0.41232376495018774" />
+            <l layer="50" neuron="1" weight="0.17648878911346611" />
+            <l layer="50" neuron="2" weight="0.44016147728085586" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="-0.11838716483599843" />
+            <l layer="50" neuron="1" weight="-0.32947212216885391" />
+            <l layer="50" neuron="2" weight="-0.44456336365293869" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="-0.12629540480035145" />
+            <l layer="50" neuron="1" weight="0.01269641356202611" />
+            <l layer="50" neuron="2" weight="-0.26143409859455846" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="0.17254687597628071" />
+            <l layer="50" neuron="1" weight="0.36021411831500671" />
+            <l layer="50" neuron="2" weight="-0.13656974753205187" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="-0.31895844257388195" />
+            <l layer="50" neuron="1" weight="-0.30958480379059206" />
+            <l layer="50" neuron="2" weight="-0.22367601502857915" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+        <neuron>
+          <Links>
+            <l layer="50" neuron="0" weight="0.35145960508448049" />
+            <l layer="50" neuron="1" weight="0.13461607211950055" />
+            <l layer="50" neuron="2" weight="0.078367284768432022" />
+          </Links>
+          <actType>0</actType>
+        </neuron>
+      </Neurons>
+    </ALayer>
+  </layers>
+</ANetwork>

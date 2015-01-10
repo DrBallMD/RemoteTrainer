@@ -15,7 +15,16 @@ namespace TrainerGUIForms
         static ServiceReference1.Service1Client client;
         BackgroundWorker worker;
         ANeuralNetwork.ANetwork network;
-        AISTask task;
+        float server_error;
+        int task_id;
+        public Form2(int id)
+        {
+            InitializeComponent();
+            client = new Service1Client();
+            network = client.getNeuralNetwork(id);
+            server_error = client.getError(id);
+            task_id = id;
+        }
         public Form2()
         {
             InitializeComponent();
@@ -50,53 +59,23 @@ namespace TrainerGUIForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            task = client.getTasks().Where(x => x.id == 4).First();
-                //new AISTask();
-            //task.id = 6;
-            //task.author = "test";
-            //task.description = "neurotest";
-            //task.name = "ffd";
-            //task.ttype = TaskType.ArtificialNeuralNetwork;
-            //string[] parametrs = new string[] { "10", "1", "8", "10", "0" };
-            //client.updateTask(
-            //client.addTask(task, parametrs);
-            //worker.RunWorkerAsync();
-            int end = (int)numericUpDown2.Value;
-            double error = (double)numericUpDown1.Value;
-            int id = 
-                task.id;
-                //client.getTasks().Last().id;
-            network = client.getNeuralNetwork(id);
-            double newError = network.study(genInputs(10, 10), genOutputs(10, 10), error, end);
-            client.setNetworkResults(id, network, (float)newError);
-        }
-        public List<List<double>> genInputs(int n, int m)
-        {
-            List<List<double>> result = new List<List<double>>();
-            for (int i = 0; i < n; i++)
+            ANeuralNetwork.StudyData[] sd = client.getStudyData(task_id);
+            List<List<double>> inputs = new List<List<double>>();
+            List<List<double>> outputs = new List<List<double>>();
+            foreach (ANeuralNetwork.StudyData s in sd)
             {
-                List<double> l = new List<double>();
-                for (int j = 0; j < m; j++)
-                {
-                    l.Add(j % (i + 1) == 0 ? 1.0 : 0.0);
-                }
-                result.Add(l);
+                inputs.Add(s.input);
+                outputs.Add(s.output);
             }
-            return result;
+            double err = network.study(inputs, outputs, Convert.ToDouble(numericUpDown1.Value), Convert.ToInt32(numericUpDown2.Value));
+            client.setNetworkResults(task_id, network, (float)err);
         }
-        public List<List<double>> genOutputs(int n, int m)
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            List<List<double>> result = new List<List<double>>();
-            for (int i = 0; i < n; i++)
-            {
-                List<double> l = new List<double>();
-                for (int j = 0; j < m; j++)
-                {
-                    l.Add(j == i ? 1.0 : 0.0);
-                }
-                result.Add(l);
-            }
-            return result;
+            AddStudyDataForm frm = new AddStudyDataForm(task_id);
+            frm.Show();
         }
+      
     }
 }

@@ -71,7 +71,7 @@ namespace AISdb
 		public float getTaskError(int id){
 			cmd.CommandText = "SELECT ERROR FROM AISTasks WHERE ID = @pId;";
 			cmd.Parameters.Add (new SQLiteParameter ("@pId",id));
-			float result = (float)cmd.ExecuteScalar ();
+			float result = Convert.ToSingle(cmd.ExecuteScalar ());
 			cmd.Parameters.Clear ();
 			return result;
 		}
