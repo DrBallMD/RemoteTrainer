@@ -6,20 +6,39 @@ using System.Text;
 using AlgoLib;
 namespace GeneticLibrary
 {
+    [Serializable()]
     public class Maximization: IGenetical
     {
-        double mutationRate;
+        protected internal double mutationRate;
 
         int start;
         int end;
 
-        int POPULATION_SIZE;
-        int chromolength = 1; //для цифр от 0 до 31, сделать параметром
+        protected internal int POPULATION_SIZE;
+        protected internal int chromolength = 1; //для цифр от 0 до 31, сделать параметром
         List<int> population;
         List<double> fitnessValues;
-        double fitnessSum;
-        List<Chromosome> chromosomes;
+        protected internal List<Chromosome> chromosomes;
         Random random;
+        public Maximization(string[] parametrs)
+        {
+            POPULATION_SIZE = Convert.ToInt32(parametrs[0]);
+            this.mutationRate = Convert.ToDouble(parametrs[1]);
+            this.start = Convert.ToInt32(parametrs[2]);
+            this.end = Convert.ToInt32(parametrs[3]);
+        }
+        public Maximization()
+        {
+            POPULATION_SIZE = 1000;
+            random = new Random();
+            population = new List<int>();
+            fitnessValues = new List<double>();
+            chromosomes = new List<Chromosome>();
+            this.mutationRate = 0.04;
+            start = -50;
+            end = 50;
+            this.FormBasicPopulation();       
+        }
         public Maximization(int _start, int _end, int populationSize, double mutationrate)
         {
             POPULATION_SIZE = populationSize;
@@ -32,19 +51,6 @@ namespace GeneticLibrary
             end = _end;
             this.FormBasicPopulation();       
         }
-        //public Maximization(int _start, int _end, double mutationrate, List<Chromosome> _population)
-        //{
-        //    POPULATION_SIZE = _population.Count;
-        //    random = new Random();
-        //    population = new List<int>();
-        //    fitnessValues = new List<double>();
-        //    //chromosomes = _population.CopyTo(;
-        //    Array.Copy(_population, chromosomes, _population.Count);
-        //    this.mutationRate = mutationrate;
-        //    start = _start;
-        //    end = _end;
-        //    this.FormBasicPopulation();
-        //}
         private double func(double x)
         {
             return 
@@ -196,7 +202,6 @@ namespace GeneticLibrary
                 population.Add(value);
                 fitnessValues.Add(func(value));
             }
-            fitnessSum = fitnessValues.Sum();
         }
         public string IntToBit(int value)
         {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GATraining.ServiceReference1 {
+namespace TrainerGUIForms.Service154.xsd {
     using System.Runtime.Serialization;
     using System;
     
@@ -41,7 +41,7 @@ namespace GATraining.ServiceReference1 {
         private string nameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private GATraining.ServiceReference1.TaskType ttypeField;
+        private TrainerGUIForms.Service154.xsd.TaskType ttypeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -132,7 +132,7 @@ namespace GATraining.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public GATraining.ServiceReference1.TaskType ttype {
+        public TrainerGUIForms.Service154.xsd.TaskType ttype {
             get {
                 return this.ttypeField;
             }
@@ -163,232 +163,6 @@ namespace GATraining.ServiceReference1 {
         
         [System.Runtime.Serialization.EnumMemberAttribute()]
         ArtificialNeuralNetwork = 1,
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ANetwork", Namespace="http://schemas.datacontract.org/2004/07/ANeuralNetwork")]
-    [System.SerializableAttribute()]
-    public partial class ANetwork : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private GATraining.ServiceReference1.ALayer[] layersField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public GATraining.ServiceReference1.ALayer[] layers {
-            get {
-                return this.layersField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.layersField, value) != true)) {
-                    this.layersField = value;
-                    this.RaisePropertyChanged("layers");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ALayer", Namespace="http://schemas.datacontract.org/2004/07/ANeuralNetwork")]
-    [System.SerializableAttribute()]
-    public partial class ALayer : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private GATraining.ServiceReference1.ANeuron[] neuronsField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public GATraining.ServiceReference1.ANeuron[] neurons {
-            get {
-                return this.neuronsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.neuronsField, value) != true)) {
-                    this.neuronsField = value;
-                    this.RaisePropertyChanged("neurons");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ANeuron", Namespace="http://schemas.datacontract.org/2004/07/ANeuralNetwork")]
-    [System.SerializableAttribute()]
-    public partial class ANeuron : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int actTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private GATraining.ServiceReference1.ALink[] linksField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int actType {
-            get {
-                return this.actTypeField;
-            }
-            set {
-                if ((this.actTypeField.Equals(value) != true)) {
-                    this.actTypeField = value;
-                    this.RaisePropertyChanged("actType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public GATraining.ServiceReference1.ALink[] links {
-            get {
-                return this.linksField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.linksField, value) != true)) {
-                    this.linksField = value;
-                    this.RaisePropertyChanged("links");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ALink", Namespace="http://schemas.datacontract.org/2004/07/ANeuralNetwork")]
-    [System.SerializableAttribute()]
-    public partial class ALink : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int layerField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int neuronField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double weightField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int layer {
-            get {
-                return this.layerField;
-            }
-            set {
-                if ((this.layerField.Equals(value) != true)) {
-                    this.layerField = value;
-                    this.RaisePropertyChanged("layer");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int neuron {
-            get {
-                return this.neuronField;
-            }
-            set {
-                if ((this.neuronField.Equals(value) != true)) {
-                    this.neuronField = value;
-                    this.RaisePropertyChanged("neuron");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public double weight {
-            get {
-                return this.weightField;
-            }
-            set {
-                if ((this.weightField.Equals(value) != true)) {
-                    this.weightField = value;
-                    this.RaisePropertyChanged("weight");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -453,38 +227,40 @@ namespace GATraining.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Service154.xsd.IService1")]
     public interface IService1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getTasks", ReplyAction="http://tempuri.org/IService1/getTasksResponse")]
-        GATraining.ServiceReference1.AISTask[] getTasks();
+        TrainerGUIForms.Service154.xsd.AISTask[] getTasks();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getNeuralNetwork", ReplyAction="http://tempuri.org/IService1/getNeuralNetworkResponse")]
-        GATraining.ServiceReference1.ANetwork getNeuralNetwork(int id);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getGeneticAlgorithm", ReplyAction="http://tempuri.org/IService1/getGeneticAlgorithmResponse")]
-        byte[] getGeneticAlgorithm(int id);
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrainerGUIForms.Service154.xsd.StudyData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrainerGUIForms.Service154.xsd.StudyData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrainerGUIForms.Service154.xsd.AISTask[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrainerGUIForms.Service154.xsd.AISTask))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrainerGUIForms.Service154.xsd.TaskType))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AlgoLib.AbstractANetwork))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(double[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(string[]))]
+        object getNeuralNetwork(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/setNetworkResults", ReplyAction="http://tempuri.org/IService1/setNetworkResultsResponse")]
-        void setNetworkResults(int id, GATraining.ServiceReference1.ANetwork net, float newError);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/setGeneticAlgorithm", ReplyAction="http://tempuri.org/IService1/setGeneticAlgorithmResponse")]
-        void setGeneticAlgorithm(int id, byte[] algorithm, float newError);
+        void setNetworkResults(int id, AlgoLib.AbstractANetwork net, float newError);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getError", ReplyAction="http://tempuri.org/IService1/getErrorResponse")]
         float getError(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getStudyData", ReplyAction="http://tempuri.org/IService1/getStudyDataResponse")]
-        GATraining.ServiceReference1.StudyData[] getStudyData(int id);
+        TrainerGUIForms.Service154.xsd.StudyData[] getStudyData(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addStudyData", ReplyAction="http://tempuri.org/IService1/addStudyDataResponse")]
-        void addStudyData(int id, GATraining.ServiceReference1.StudyData[] data);
+        void addStudyData(int id, TrainerGUIForms.Service154.xsd.StudyData[] data);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addTask", ReplyAction="http://tempuri.org/IService1/addTaskResponse")]
-        void addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters);
+        void addTask(TrainerGUIForms.Service154.xsd.AISTask tt, string[] parameters);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/updateTask", ReplyAction="http://tempuri.org/IService1/updateTaskResponse")]
-        void updateTask(GATraining.ServiceReference1.AISTask tt);
+        void updateTask(TrainerGUIForms.Service154.xsd.AISTask tt);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/deleteTask", ReplyAction="http://tempuri.org/IService1/deleteTaskResponse")]
         void deleteTask(int id);
@@ -497,12 +273,12 @@ namespace GATraining.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : GATraining.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : TrainerGUIForms.Service154.xsd.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<GATraining.ServiceReference1.IService1>, GATraining.ServiceReference1.IService1 {
+    public partial class Service1Client : System.ServiceModel.ClientBase<TrainerGUIForms.Service154.xsd.IService1>, TrainerGUIForms.Service154.xsd.IService1 {
         
         public Service1Client() {
         }
@@ -523,43 +299,35 @@ namespace GATraining.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public GATraining.ServiceReference1.AISTask[] getTasks() {
+        public TrainerGUIForms.Service154.xsd.AISTask[] getTasks() {
             return base.Channel.getTasks();
         }
         
-        public GATraining.ServiceReference1.ANetwork getNeuralNetwork(int id) {
+        public object getNeuralNetwork(int id) {
             return base.Channel.getNeuralNetwork(id);
         }
         
-        public byte[] getGeneticAlgorithm(int id) {
-            return base.Channel.getGeneticAlgorithm(id);
-        }
-        
-        public void setNetworkResults(int id, GATraining.ServiceReference1.ANetwork net, float newError) {
+        public void setNetworkResults(int id, AlgoLib.AbstractANetwork net, float newError) {
             base.Channel.setNetworkResults(id, net, newError);
-        }
-        
-        public void setGeneticAlgorithm(int id, byte[] algorithm, float newError) {
-            base.Channel.setGeneticAlgorithm(id, algorithm, newError);
         }
         
         public float getError(int id) {
             return base.Channel.getError(id);
         }
         
-        public GATraining.ServiceReference1.StudyData[] getStudyData(int id) {
+        public TrainerGUIForms.Service154.xsd.StudyData[] getStudyData(int id) {
             return base.Channel.getStudyData(id);
         }
         
-        public void addStudyData(int id, GATraining.ServiceReference1.StudyData[] data) {
+        public void addStudyData(int id, TrainerGUIForms.Service154.xsd.StudyData[] data) {
             base.Channel.addStudyData(id, data);
         }
         
-        public void addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters) {
+        public void addTask(TrainerGUIForms.Service154.xsd.AISTask tt, string[] parameters) {
             base.Channel.addTask(tt, parameters);
         }
         
-        public void updateTask(GATraining.ServiceReference1.AISTask tt) {
+        public void updateTask(TrainerGUIForms.Service154.xsd.AISTask tt) {
             base.Channel.updateTask(tt);
         }
         

@@ -5,8 +5,12 @@ using System.Text;
 
 namespace GeneticLibrary
 {
+    [Serializable()]
     public class Chromosome
     {
+        public Chromosome()
+        {
+        }
         public Chromosome(char[] bitarray)
         {
             this.bits = new char[bitarray.Length];

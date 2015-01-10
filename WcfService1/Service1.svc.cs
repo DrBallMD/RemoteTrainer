@@ -59,12 +59,21 @@ namespace WcfService1
                     FileStream file = File.Create(tt.fpath + "network.xml");
                     xs.Serialize(file, nn);
                     file.Close();
-                    tt.current_error = 100.0f;
                     break;
                 case AISdb.TaskType.GeneticAlgorithm:
+                    AlgoLib.IGenetical genAlgo;
                     tt.fpath = HostingEnvironment.ApplicationPhysicalPath + "AIS\\GA\\" + generatePath(tt.name + tt.author) + "\\";
                     Directory.CreateDirectory (tt.fpath);
-                    //TODO: Магия
+                    switch (tt.description)
+                    {
+                        case "GeneticLibrary.Maximization":
+                            genAlgo = new GeneticLibrary.Maximization(Convert.ToInt32(parameters[0]), Convert.ToInt32(parameters[1]), Convert.ToInt32(parameters[2]), Convert.ToDouble(parameters[3]));
+                            break;
+                        default:
+                            throw new Exception();
+                    }
+                    GenXmlSerialization.XmlSerialization.AdvancedObjectSerialize<AlgoLib.IGenetical>(genAlgo, tt.fpath + "gaalgo.xml");
+                    
                     break;
                 default: throw new Exception("wrong type");
             }
@@ -192,10 +201,29 @@ namespace WcfService1
         }
         public string[] GetAvailableGALibs()
         {
-            AISdb.AISdb db = AISdb.AISdb.getInstance();
-            db.open(connstr);
-
-            return db.getGALibsNames().ToArray(); //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
+            return null; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
         }
+        public byte[] getGeneticAlgorithm(int id)
+        {
+            AISdb.AISdb inst = AISdb.AISdb.getInstance();
+            inst.open(connstr);
+            string fpath = inst.getTaskFilepath(id) + "gaalgo.xml";
+            inst.close();
+            AlgoLib.IGenetical result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GeneticLibrary.Maximization>(fpath) as AlgoLib.IGenetical;
+
+
+            return GenXmlSerialization.BinSerialization.OgjectToByte(result);
+        }
+        public void setGeneticAlgorithm(int id, byte[] algorithm, float newError)
+        {
+            AISdb.AISdb inst = AISdb.AISdb.getInstance();
+            inst.open(connstr);
+            inst.setTaskError(id, newError);
+            string fpath = inst.getTaskFilepath(id) + "gaalgo.xml";
+            inst.close();
+            AlgoLib.IGenetical aa = GenXmlSerialization.BinSerialization.ByteToObject(algorithm) as GeneticLibrary.Maximization;
+            GenXmlSerialization.XmlSerialization.AdvancedObjectSerialize<AlgoLib.IGenetical>(aa, fpath);
+        }
+        
     }
 }

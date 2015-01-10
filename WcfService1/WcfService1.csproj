@@ -91,6 +91,10 @@
       <Project>{e38ca1b7-1f86-4777-85d0-252c408c1ba9}</Project>
       <Name>AISdb</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AlgoLib\AlgoLib.csproj">
+      <Project>{499fdafc-fec6-4033-ab57-83ab4da39a0d}</Project>
+      <Name>AlgoLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ANeuralNetwork\ANeuralNetwork\ANeuralNetwork.csproj">
       <Project>{26f2c96d-5279-4340-a2f2-3d0a722b94e1}</Project>
       <Name>ANeuralNetwork</Name>
@@ -98,6 +102,10 @@
     <ProjectReference Include="..\GeneticLibrary\GeneticLibrary.csproj">
       <Project>{fd78b04f-9de7-4e91-8703-4fea012ffc3d}</Project>
       <Name>GeneticLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XmlSerialization\XmlSerialization.csproj">
+      <Project>{442490d2-b14e-46a5-847e-d22a70334de6}</Project>
+      <Name>XmlSerialization</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
