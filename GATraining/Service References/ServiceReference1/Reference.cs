@@ -462,8 +462,14 @@ namespace GATraining.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getNeuralNetwork", ReplyAction="http://tempuri.org/IService1/getNeuralNetworkResponse")]
         GATraining.ServiceReference1.ANetwork getNeuralNetwork(int id);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getGeneticAlgorithm", ReplyAction="http://tempuri.org/IService1/getGeneticAlgorithmResponse")]
+        byte[] getGeneticAlgorithm(int id);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/setNetworkResults", ReplyAction="http://tempuri.org/IService1/setNetworkResultsResponse")]
         void setNetworkResults(int id, GATraining.ServiceReference1.ANetwork net, float newError);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/setGeneticAlgorithm", ReplyAction="http://tempuri.org/IService1/setGeneticAlgorithmResponse")]
+        void setGeneticAlgorithm(int id, byte[] algorithm, float newError);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getError", ReplyAction="http://tempuri.org/IService1/getErrorResponse")]
         float getError(int id);
@@ -475,22 +481,7 @@ namespace GATraining.ServiceReference1 {
         void addStudyData(int id, GATraining.ServiceReference1.StudyData[] data);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addTask", ReplyAction="http://tempuri.org/IService1/addTaskResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(double[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(string[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ANetwork))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ALayer[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ALayer))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ANeuron[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ANeuron))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ALink[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.ALink))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.StudyData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.StudyData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.AISTask[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.AISTask))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(GATraining.ServiceReference1.TaskType))]
-        void addTask(GATraining.ServiceReference1.AISTask tt, object[] parameters);
+        void addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/updateTask", ReplyAction="http://tempuri.org/IService1/updateTaskResponse")]
         void updateTask(GATraining.ServiceReference1.AISTask tt);
@@ -540,8 +531,16 @@ namespace GATraining.ServiceReference1 {
             return base.Channel.getNeuralNetwork(id);
         }
         
+        public byte[] getGeneticAlgorithm(int id) {
+            return base.Channel.getGeneticAlgorithm(id);
+        }
+        
         public void setNetworkResults(int id, GATraining.ServiceReference1.ANetwork net, float newError) {
             base.Channel.setNetworkResults(id, net, newError);
+        }
+        
+        public void setGeneticAlgorithm(int id, byte[] algorithm, float newError) {
+            base.Channel.setGeneticAlgorithm(id, algorithm, newError);
         }
         
         public float getError(int id) {
@@ -556,7 +555,7 @@ namespace GATraining.ServiceReference1 {
             base.Channel.addStudyData(id, data);
         }
         
-        public void addTask(GATraining.ServiceReference1.AISTask tt, object[] parameters) {
+        public void addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters) {
             base.Channel.addTask(tt, parameters);
         }
         
