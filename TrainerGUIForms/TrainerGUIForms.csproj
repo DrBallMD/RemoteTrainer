@@ -155,20 +155,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\ServiceReference1\Service11.wsdl" />
-    <None Include="Service References\ServiceReference1\Service15.xsd">
+    <None Include="Service References\ServiceReference1\Service1.wsdl" />
+    <None Include="Service References\ServiceReference1\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference1\Service151.xsd">
+    <None Include="Service References\ServiceReference1\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference1\Service152.xsd">
+    <None Include="Service References\ServiceReference1\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference1\Service153.xsd">
+    <None Include="Service References\ServiceReference1\Service13.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference1\Service154.xsd">
+    <None Include="Service References\ServiceReference1\Service14.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ServiceReference1\TrainerGUIForms.ServiceReference1.AISTask.datasource">
@@ -179,7 +179,24 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AlgoLib\AlgoLib.csproj">
+      <Project>{499fdafc-fec6-4033-ab57-83ab4da39a0d}</Project>
+      <Name>AlgoLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ANeuralNetwork\ANeuralNetwork\ANeuralNetwork.csproj">
+      <Project>{26f2c96d-5279-4340-a2f2-3d0a722b94e1}</Project>
+      <Name>ANeuralNetwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XmlSerialization\XmlSerialization.csproj">
+      <Project>{442490d2-b14e-46a5-847e-d22a70334de6}</Project>
+      <Name>XmlSerialization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\Service1.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
@@ -192,15 +209,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReference1\Service11.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ANeuralNetwork\ANeuralNetwork\ANeuralNetwork.csproj">
-      <Project>{26f2c96d-5279-4340-a2f2-3d0a722b94e1}</Project>
-      <Name>ANeuralNetwork</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

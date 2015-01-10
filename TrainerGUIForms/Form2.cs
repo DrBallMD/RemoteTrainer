@@ -13,10 +13,10 @@ namespace TrainerGUIForms
     public partial class Form2 : Form
     {
         static ServiceReference1.Service1Client client;
-        BackgroundWorker worker;
         ANeuralNetwork.ANetwork network;
         float server_error;
         int task_id;
+        System.Threading.Thread task;
         public Form2(int id)
         {
             InitializeComponent();
@@ -29,35 +29,8 @@ namespace TrainerGUIForms
         {
             InitializeComponent();
             client = new Service1Client();
-            worker = new BackgroundWorker();
-            worker.DoWork += worker_DoWork;
-            worker.RunWorkerCompleted += worker_RunWorkerCompleted;
-            worker.ProgressChanged += worker_ProgressChanged;
-            worker.WorkerSupportsCancellation = true;
-            worker.WorkerReportsProgress = true;
-            progressBar1.Minimum = 0;
-            progressBar1.Maximum = 100;
         }
-
-        void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            progressBar1.Value = e.ProgressPercentage;
-        }
-
-        void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            if (progressBar1.Value < 100)
-                progressBar1.Value = 100;
-            //ANeuralNetwork.
-            //client.setNetworkResults(task.id,network,network.
-        }
-
-        void worker_DoWork(object sender, DoWorkEventArgs e)
-        {
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void work()
         {
             ANeuralNetwork.StudyData[] sd = client.getStudyData(task_id);
             List<List<double>> inputs = new List<List<double>>();
@@ -70,11 +43,33 @@ namespace TrainerGUIForms
             double err = network.study(inputs, outputs, Convert.ToDouble(numericUpDown1.Value), Convert.ToInt32(numericUpDown2.Value));
             client.setNetworkResults(task_id, network, (float)err);
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            task = new System.Threading.Thread(work);
+            task.Start();
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
             AddStudyDataForm frm = new AddStudyDataForm(task_id);
             frm.Show();
+        }
+
+        private void Form2_Deactivate(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (task != null)
+            {
+                if (task.IsAlive)
+                {
+                    MessageBox.Show("Идет обучение!");
+                    e.Cancel = true;
+                }
+            }
         }
       
     }

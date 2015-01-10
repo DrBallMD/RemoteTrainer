@@ -175,8 +175,14 @@ namespace TrainerGUIForms.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getNeuralNetwork", ReplyAction="http://tempuri.org/IService1/getNeuralNetworkResponse")]
         ANeuralNetwork.ANetwork getNeuralNetwork(int id);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getGeneticAlgorithm", ReplyAction="http://tempuri.org/IService1/getGeneticAlgorithmResponse")]
+        byte[] getGeneticAlgorithm(int id);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/setNetworkResults", ReplyAction="http://tempuri.org/IService1/setNetworkResultsResponse")]
         void setNetworkResults(int id, ANeuralNetwork.ANetwork net, float newError);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/setGeneticAlgorithm", ReplyAction="http://tempuri.org/IService1/setGeneticAlgorithmResponse")]
+        void setGeneticAlgorithm(int id, byte[] algorithm, float newError);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getError", ReplyAction="http://tempuri.org/IService1/getErrorResponse")]
         float getError(int id);
@@ -238,8 +244,16 @@ namespace TrainerGUIForms.ServiceReference1 {
             return base.Channel.getNeuralNetwork(id);
         }
         
+        public byte[] getGeneticAlgorithm(int id) {
+            return base.Channel.getGeneticAlgorithm(id);
+        }
+        
         public void setNetworkResults(int id, ANeuralNetwork.ANetwork net, float newError) {
             base.Channel.setNetworkResults(id, net, newError);
+        }
+        
+        public void setGeneticAlgorithm(int id, byte[] algorithm, float newError) {
+            base.Channel.setGeneticAlgorithm(id, algorithm, newError);
         }
         
         public float getError(int id) {

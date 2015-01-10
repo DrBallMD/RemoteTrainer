@@ -68,6 +68,8 @@ namespace TrainerGUIForms
                     frm.Show();
                     break;
                 default:
+                    Form1 frm2 = new Form1(client, tt);
+                    frm2.ShowDialog();
                     break;
             }
         }

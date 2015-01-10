@@ -133,6 +133,8 @@
             this.Controls.Add(this.progressBar1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Deactivate += new System.EventHandler(this.Form2_Deactivate);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);

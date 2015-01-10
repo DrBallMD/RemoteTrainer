@@ -29,6 +29,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="getGeneticAlgorithm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getGeneticAlgorithmResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getGeneticAlgorithmResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="setNetworkResults">
     <xs:complexType>
       <xs:sequence>
@@ -39,6 +53,20 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="setNetworkResultsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setGeneticAlgorithm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="algorithm" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="newError" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setGeneticAlgorithmResponse">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>

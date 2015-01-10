@@ -21,11 +21,23 @@
   <wsdl:message name="IService1_getNeuralNetwork_OutputMessage">
     <wsdl:part name="parameters" element="tns:getNeuralNetworkResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_getGeneticAlgorithm_InputMessage">
+    <wsdl:part name="parameters" element="tns:getGeneticAlgorithm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getGeneticAlgorithm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getGeneticAlgorithmResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_setNetworkResults_InputMessage">
     <wsdl:part name="parameters" element="tns:setNetworkResults" />
   </wsdl:message>
   <wsdl:message name="IService1_setNetworkResults_OutputMessage">
     <wsdl:part name="parameters" element="tns:setNetworkResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_setGeneticAlgorithm_InputMessage">
+    <wsdl:part name="parameters" element="tns:setGeneticAlgorithm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_setGeneticAlgorithm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setGeneticAlgorithmResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_getError_InputMessage">
     <wsdl:part name="parameters" element="tns:getError" />
@@ -84,9 +96,17 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/getNeuralNetwork" message="tns:IService1_getNeuralNetwork_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/getNeuralNetworkResponse" message="tns:IService1_getNeuralNetwork_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="getGeneticAlgorithm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getGeneticAlgorithm" message="tns:IService1_getGeneticAlgorithm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getGeneticAlgorithmResponse" message="tns:IService1_getGeneticAlgorithm_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="setNetworkResults">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/setNetworkResults" message="tns:IService1_setNetworkResults_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/setNetworkResultsResponse" message="tns:IService1_setNetworkResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setGeneticAlgorithm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/setGeneticAlgorithm" message="tns:IService1_setGeneticAlgorithm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/setGeneticAlgorithmResponse" message="tns:IService1_setGeneticAlgorithm_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="getError">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/getError" message="tns:IService1_getError_InputMessage" />
@@ -141,8 +161,26 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getGeneticAlgorithm">
+      <soap:operation soapAction="http://tempuri.org/IService1/getGeneticAlgorithm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="setNetworkResults">
       <soap:operation soapAction="http://tempuri.org/IService1/setNetworkResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGeneticAlgorithm">
+      <soap:operation soapAction="http://tempuri.org/IService1/setGeneticAlgorithm" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

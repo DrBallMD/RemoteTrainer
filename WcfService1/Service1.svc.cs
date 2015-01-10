@@ -195,13 +195,13 @@ namespace WcfService1
         }
         public byte[] GetAssembly(string name)
         {
-            string dir = HostingEnvironment.ApplicationPhysicalPath+"\\bin\\GALibraries\\";
+            string dir = HostingEnvironment.ApplicationPhysicalPath+"bin\\";
             byte[] file = File.ReadAllBytes(dir+name);
             return file;
         }
         public string[] GetAvailableGALibs()
         {
-            return null; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
+            return new string[]{"GeneticLibrary.dll"}; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
         }
         public byte[] getGeneticAlgorithm(int id)
         {
@@ -210,9 +210,14 @@ namespace WcfService1
             string fpath = inst.getTaskFilepath(id) + "gaalgo.xml";
             inst.close();
             AlgoLib.IGenetical result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GeneticLibrary.Maximization>(fpath) as AlgoLib.IGenetical;
-
-
-            return GenXmlSerialization.BinSerialization.OgjectToByte(result);
+            if (result != null)
+            {
+                return GenXmlSerialization.BinSerialization.OgjectToByte(result);
+            }
+            else
+            {
+                throw new Exception();
+            }
         }
         public void setGeneticAlgorithm(int id, byte[] algorithm, float newError)
         {
