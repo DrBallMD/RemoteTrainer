@@ -47,8 +47,9 @@ namespace WcfService1
         /// </summary>
         /// <param name="tt"></param>
         /// <param name="parameters">для нейронных сетей 0 - нейроны на входе, 1 = скрытые слои, 2=кол-во нейронов в скрытых слоях 3= нейроны на выходе 4=активационная ф-я(нолик)</param>
-        public void addTask(AISdb.AISTask tt, List<string> parameters) //оно всё равно превратится в стринги в процессе передачи.
+        public int addTask(AISdb.AISTask tt, List<string> parameters) //оно всё равно превратится в стринги в процессе передачи.
         {
+            int result = -1;
             switch (tt.ttype)
             {
                 case AISdb.TaskType.ArtificialNeuralNetwork:
@@ -79,8 +80,9 @@ namespace WcfService1
             }
             AISdb.AISdb db = AISdb.AISdb.getInstance();
             db.open(connstr);
-            db.addTask(tt);
+            result = db.addTask(tt);
             db.close();
+            return result;
         }
         /// <summary>
         /// Получить экземпляр нейронной сети

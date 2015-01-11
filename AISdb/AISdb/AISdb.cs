@@ -38,7 +38,7 @@ namespace AISdb
 			cmd.ExecuteNonQuery ();
 		}
 
-		public void addTask(AISTask newtask){
+		public int addTask(AISTask newtask){
 			//throw new Exception ("not implemented yet");
 			cmd.CommandText = "INSERT INTO AISTasks(NAME, AUTHOR, DESCRIPTION, TYPE, ERROR, FILEPATH) VALUES( @pName, @pAuthor, @pDescription, @pType, @pError, @pFilepath);";
 			cmd.Parameters.Add(new SQLiteParameter("@pName",newtask.name));
@@ -48,7 +48,12 @@ namespace AISdb
 			cmd.Parameters.Add (new SQLiteParameter ("@pError", newtask.current_error));
 			cmd.Parameters.Add (new SQLiteParameter ("@pFilepath", newtask.fpath));
 			cmd.ExecuteNonQuery ();
-			cmd.Parameters.Clear ();
+            cmd.Parameters.Clear ();
+            cmd.CommandText = "SELECT ID FROM AISTasks WHERE FILEPATH = @pFilepath;";
+            cmd.Parameters.Add(new SQLiteParameter("@pFilepath", newtask.fpath));
+            int result = Convert.ToInt32(cmd.ExecuteScalar());
+            cmd.Parameters.Clear();
+            return result;
 		}
 
 		public void updateTask(AISTask updatedTask){
