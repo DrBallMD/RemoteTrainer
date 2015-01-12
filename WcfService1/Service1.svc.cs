@@ -70,6 +70,10 @@ namespace WcfService1
                         case "GeneticLibrary.Maximization":
                             genAlgo = new GeneticLibrary.Maximization(Convert.ToInt32(parameters[0]), Convert.ToInt32(parameters[1]), Convert.ToInt32(parameters[2]), Convert.ToDouble(parameters[3]));
                             break;
+                        case "GarchenkoAgorithm.Knapsack":
+                            genAlgo = new GarchenkoAgorithm.Knapsack(10,25,15);
+
+                            break;
                         default:
                             throw new Exception();
                     }
@@ -203,7 +207,7 @@ namespace WcfService1
         }
         public string[] GetAvailableGALibs()
         {
-            return new string[]{"GeneticLibrary.dll"}; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
+            return new string[] { "GeneticLibrary.dll", "GarchenkoAgorithm.dll" }; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
         }
         public byte[] getGeneticAlgorithm(AISdb.AISTask task)
         {
@@ -211,7 +215,17 @@ namespace WcfService1
             inst.open(connstr);
             string fpath = inst.getTaskFilepath(task.id) + "gaalgo.xml";
             inst.close();
-            AlgoLib.IGenetical result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GeneticLibrary.Maximization>(fpath) as AlgoLib.IGenetical;
+            AlgoLib.IGenetical result;
+            switch (task.description)
+            {
+                case "GarchenkoAgorithm.Knapsack":
+                result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GarchenkoAgorithm.Knapsack>(fpath) as AlgoLib.IGenetical;
+                break;
+                default:
+                result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GeneticLibrary.Maximization>(fpath) as AlgoLib.IGenetical;
+                break;
+            }
+
             if (result != null)
             {
                 return GenXmlSerialization.BinSerialization.OgjectToByte(result);

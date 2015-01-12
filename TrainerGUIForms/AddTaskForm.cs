@@ -37,7 +37,7 @@ namespace TrainerGUIForms
             tt.author = textBox1.Text;
             tt.description = richTextBox1.Text;
             //string[] parameters = textBox2.Text.Split(";".ToCharArray());
-            string[] parameters = {};
+            string[] parameters = {"0"};
             tt.ttype = comboBox1.SelectedIndex == 0 ? TaskType.GeneticAlgorithm : TaskType.ArtificialNeuralNetwork;
             if (tt.ttype == TaskType.ArtificialNeuralNetwork)
             {
