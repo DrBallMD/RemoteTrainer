@@ -242,7 +242,7 @@ namespace WcfService1
             inst.setTaskError(id, newError);
             string fpath = inst.getTaskFilepath(id) + "gaalgo.xml";
             inst.close();
-            AlgoLib.IGenetical aa = GenXmlSerialization.BinSerialization.ByteToObject(algorithm) as GeneticLibrary.Maximization;
+            AlgoLib.IGenetical aa = GenXmlSerialization.BinSerialization.ByteToObject(algorithm) as AlgoLib.IGenetical;
             GenXmlSerialization.XmlSerialization.AdvancedObjectSerialize<AlgoLib.IGenetical>(aa, fpath);
         }
         
