@@ -194,7 +194,7 @@ namespace TrainerGUIForms.ServiceReference1 {
         void addStudyData(int id, ANeuralNetwork.StudyData[] data);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addTask", ReplyAction="http://tempuri.org/IService1/addTaskResponse")]
-        void addTask(TrainerGUIForms.ServiceReference1.AISTask tt, string[] parameters);
+        int addTask(TrainerGUIForms.ServiceReference1.AISTask tt, string[] parameters);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/updateTask", ReplyAction="http://tempuri.org/IService1/updateTaskResponse")]
         void updateTask(TrainerGUIForms.ServiceReference1.AISTask tt);
@@ -268,8 +268,8 @@ namespace TrainerGUIForms.ServiceReference1 {
             base.Channel.addStudyData(id, data);
         }
         
-        public void addTask(TrainerGUIForms.ServiceReference1.AISTask tt, string[] parameters) {
-            base.Channel.addTask(tt, parameters);
+        public int addTask(TrainerGUIForms.ServiceReference1.AISTask tt, string[] parameters) {
+            return base.Channel.addTask(tt, parameters);
         }
         
         public void updateTask(TrainerGUIForms.ServiceReference1.AISTask tt) {

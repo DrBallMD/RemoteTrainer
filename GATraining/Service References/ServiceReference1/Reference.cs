@@ -463,7 +463,7 @@ namespace GATraining.ServiceReference1 {
         GATraining.ServiceReference1.ANetwork getNeuralNetwork(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getGeneticAlgorithm", ReplyAction="http://tempuri.org/IService1/getGeneticAlgorithmResponse")]
-        byte[] getGeneticAlgorithm(int id);
+        byte[] getGeneticAlgorithm(GATraining.ServiceReference1.AISTask task);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/setNetworkResults", ReplyAction="http://tempuri.org/IService1/setNetworkResultsResponse")]
         void setNetworkResults(int id, GATraining.ServiceReference1.ANetwork net, float newError);
@@ -481,7 +481,7 @@ namespace GATraining.ServiceReference1 {
         void addStudyData(int id, GATraining.ServiceReference1.StudyData[] data);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addTask", ReplyAction="http://tempuri.org/IService1/addTaskResponse")]
-        void addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters);
+        int addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/updateTask", ReplyAction="http://tempuri.org/IService1/updateTaskResponse")]
         void updateTask(GATraining.ServiceReference1.AISTask tt);
@@ -531,8 +531,8 @@ namespace GATraining.ServiceReference1 {
             return base.Channel.getNeuralNetwork(id);
         }
         
-        public byte[] getGeneticAlgorithm(int id) {
-            return base.Channel.getGeneticAlgorithm(id);
+        public byte[] getGeneticAlgorithm(GATraining.ServiceReference1.AISTask task) {
+            return base.Channel.getGeneticAlgorithm(task);
         }
         
         public void setNetworkResults(int id, GATraining.ServiceReference1.ANetwork net, float newError) {
@@ -555,8 +555,8 @@ namespace GATraining.ServiceReference1 {
             base.Channel.addStudyData(id, data);
         }
         
-        public void addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters) {
-            base.Channel.addTask(tt, parameters);
+        public int addTask(GATraining.ServiceReference1.AISTask tt, string[] parameters) {
+            return base.Channel.addTask(tt, parameters);
         }
         
         public void updateTask(GATraining.ServiceReference1.AISTask tt) {

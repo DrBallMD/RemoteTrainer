@@ -47,8 +47,9 @@ namespace WcfService1
         /// </summary>
         /// <param name="tt"></param>
         /// <param name="parameters">для нейронных сетей 0 - нейроны на входе, 1 = скрытые слои, 2=кол-во нейронов в скрытых слоях 3= нейроны на выходе 4=активационная ф-я(нолик)</param>
-        public void addTask(AISdb.AISTask tt, List<string> parameters) //оно всё равно превратится в стринги в процессе передачи.
+        public int addTask(AISdb.AISTask tt, List<string> parameters) //оно всё равно превратится в стринги в процессе передачи.
         {
+            int result = -1;
             switch (tt.ttype)
             {
                 case AISdb.TaskType.ArtificialNeuralNetwork:
@@ -69,10 +70,6 @@ namespace WcfService1
                         case "GeneticLibrary.Maximization":
                             genAlgo = new GeneticLibrary.Maximization(Convert.ToInt32(parameters[0]), Convert.ToInt32(parameters[1]), Convert.ToInt32(parameters[2]), Convert.ToDouble(parameters[3]));
                             break;
-                        case "GarchenkoAgorithm.Knapsack":
-                            genAlgo = new GarchenkoAgorithm.Knapsack(Convert.ToInt32(parameters[0]), Convert.ToDouble(parameters[1]), Convert.ToInt32(parameters[2]));
-
-                            break;
                         default:
                             throw new Exception();
                     }
@@ -83,8 +80,9 @@ namespace WcfService1
             }
             AISdb.AISdb db = AISdb.AISdb.getInstance();
             db.open(connstr);
-            db.addTask(tt);
+            result = db.addTask(tt);
             db.close();
+            return result;
         }
         /// <summary>
         /// Получить экземпляр нейронной сети
@@ -205,7 +203,7 @@ namespace WcfService1
         }
         public string[] GetAvailableGALibs()
         {
-            return new string[] { "GeneticLibrary.dll", "GarchenkoAgorithm.dll" }; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
+            return new string[]{"GeneticLibrary.dll"}; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
         }
         public byte[] getGeneticAlgorithm(AISdb.AISTask task)
         {
@@ -213,18 +211,7 @@ namespace WcfService1
             inst.open(connstr);
             string fpath = inst.getTaskFilepath(task.id) + "gaalgo.xml";
             inst.close();
-            AlgoLib.IGenetical result;
-            switch (task.description)
-            {
-                case "GeneticLibrary.Maximization":
-                    result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GeneticLibrary.Maximization>(fpath) as AlgoLib.IGenetical;
-                    break;
-                case "GarchenkoAgorithm.Knapsack":
-                    result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GarchenkoAgorithm.Knapsack>(fpath) as AlgoLib.IGenetical;
-                    break;
-                default:
-                    throw new Exception();
-            }
+            AlgoLib.IGenetical result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GeneticLibrary.Maximization>(fpath) as AlgoLib.IGenetical;
             if (result != null)
             {
                 return GenXmlSerialization.BinSerialization.OgjectToByte(result);
@@ -241,7 +228,7 @@ namespace WcfService1
             inst.setTaskError(id, newError);
             string fpath = inst.getTaskFilepath(id) + "gaalgo.xml";
             inst.close();
-            AlgoLib.IGenetical aa = GenXmlSerialization.BinSerialization.ByteToObject(algorithm) as AlgoLib.IGenetical;
+            AlgoLib.IGenetical aa = GenXmlSerialization.BinSerialization.ByteToObject(algorithm) as GeneticLibrary.Maximization;
             GenXmlSerialization.XmlSerialization.AdvancedObjectSerialize<AlgoLib.IGenetical>(aa, fpath);
         }
         

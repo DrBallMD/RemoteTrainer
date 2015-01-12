@@ -26,7 +26,7 @@ namespace TrainerGUIForms
             tasklist = client.getTasks();
             foreach (AISTask tt in tasklist)
             {
-                dataGridView1.Rows.Add(tt.name, tt.author, tt.ttype == TaskType.GeneticAlgorithm ? "Генетический алгоритм" : "Искуственная нейронная сеть", tt.id, tt.description);
+                dataGridView1.Rows.Add(tt.name, tt.author, tt.ttype == TaskType.GeneticAlgorithm ? "Генетический алгоритм" : "Искуственная нейронная сеть", tt.id, tt.description, tt.current_error);
             }
            
         }
@@ -67,11 +67,9 @@ namespace TrainerGUIForms
                     Form2 frm = new Form2(tt.id);
                     frm.Show();
                     break;
-                case TaskType.GeneticAlgorithm:
+                default:
                     Form1 frm2 = new Form1(client, tt);
                     frm2.ShowDialog();
-                    break;
-                default:
                     break;
             }
         }

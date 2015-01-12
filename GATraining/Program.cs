@@ -28,7 +28,7 @@ namespace GATraining
             #endregion
             File.WriteAllBytes("GeneticLibrary.dll", service.GetAssembly("GeneticLibrary.dll"));
             task = service.getTasks().Where(x => x.id == 9).First();
-            IGenetical aa =  GenXmlSerialization.BinSerialization.ByteToObject(service.getGeneticAlgorithm(task.id)) as AlgoLib.IGenetical;
+            IGenetical aa =  GenXmlSerialization.BinSerialization.ByteToObject(service.getGeneticAlgorithm(task)) as AlgoLib.IGenetical;
             aa.NextGeneration();
             aa.NextGeneration();
             service.setGeneticAlgorithm(task.id, GenXmlSerialization.BinSerialization.OgjectToByte(aa), (float)0.001);
