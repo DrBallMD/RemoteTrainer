@@ -31,11 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.dataSet1 = new System.Data.DataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.taskName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.taskAuthor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.taskType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.taskDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,6 +39,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.обновитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.taskName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.taskAuthor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.taskType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.taskDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.current_error = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -66,7 +67,8 @@
             this.taskAuthor,
             this.taskType,
             this.id,
-            this.taskDescription});
+            this.taskDescription,
+            this.current_error});
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -81,38 +83,6 @@
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
-            // 
-            // taskName
-            // 
-            this.taskName.HeaderText = "Наименование";
-            this.taskName.Name = "taskName";
-            this.taskName.ReadOnly = true;
-            // 
-            // taskAuthor
-            // 
-            this.taskAuthor.HeaderText = "Автор";
-            this.taskAuthor.Name = "taskAuthor";
-            this.taskAuthor.ReadOnly = true;
-            // 
-            // taskType
-            // 
-            this.taskType.HeaderText = "Тип задачи";
-            this.taskType.Name = "taskType";
-            this.taskType.ReadOnly = true;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Visible = false;
-            // 
-            // taskDescription
-            // 
-            this.taskDescription.HeaderText = "Описание";
-            this.taskDescription.Name = "taskDescription";
-            this.taskDescription.ReadOnly = true;
-            this.taskDescription.Visible = false;
             // 
             // contextMenuStrip1
             // 
@@ -183,6 +153,44 @@
             this.обновитьToolStripMenuItem.Text = "Обновить";
             this.обновитьToolStripMenuItem.Click += new System.EventHandler(this.обновитьToolStripMenuItem_Click);
             // 
+            // taskName
+            // 
+            this.taskName.HeaderText = "Наименование";
+            this.taskName.Name = "taskName";
+            this.taskName.ReadOnly = true;
+            // 
+            // taskAuthor
+            // 
+            this.taskAuthor.HeaderText = "Автор";
+            this.taskAuthor.Name = "taskAuthor";
+            this.taskAuthor.ReadOnly = true;
+            // 
+            // taskType
+            // 
+            this.taskType.HeaderText = "Тип задачи";
+            this.taskType.Name = "taskType";
+            this.taskType.ReadOnly = true;
+            // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // taskDescription
+            // 
+            this.taskDescription.HeaderText = "Описание";
+            this.taskDescription.Name = "taskDescription";
+            this.taskDescription.ReadOnly = true;
+            this.taskDescription.Visible = false;
+            // 
+            // current_error
+            // 
+            this.current_error.HeaderText = "Текущая ошибка";
+            this.current_error.Name = "current_error";
+            this.current_error.ReadOnly = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,11 +216,6 @@
 
         private System.Data.DataSet dataSet1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn taskName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn taskAuthor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn taskType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn taskDescription;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -221,6 +224,12 @@
         private System.Windows.Forms.ToolStripMenuItem удалитьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem редактироватьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem обновитьToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn taskName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn taskAuthor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn taskType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn taskDescription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn current_error;
 
     }
 }

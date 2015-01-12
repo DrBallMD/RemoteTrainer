@@ -23,6 +23,7 @@ namespace TrainerGUIForms
             client = new Service1Client();
             network = client.getNeuralNetwork(id);
             server_error = client.getError(id);
+            numericUpDown1.Value = Convert.ToDecimal(server_error);
             task_id = id;
         }
         public Form2()
