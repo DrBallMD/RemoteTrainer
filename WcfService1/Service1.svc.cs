@@ -69,6 +69,10 @@ namespace WcfService1
                         case "GeneticLibrary.Maximization":
                             genAlgo = new GeneticLibrary.Maximization(Convert.ToInt32(parameters[0]), Convert.ToInt32(parameters[1]), Convert.ToInt32(parameters[2]), Convert.ToDouble(parameters[3]));
                             break;
+                        case "GarchenkoAgorithm.Knapsack":
+                            genAlgo = new GarchenkoAgorithm.Knapsack(Convert.ToInt32(parameters[0]), Convert.ToDouble(parameters[1]), Convert.ToInt32(parameters[2]));
+
+                            break;
                         default:
                             throw new Exception();
                     }
@@ -201,15 +205,26 @@ namespace WcfService1
         }
         public string[] GetAvailableGALibs()
         {
-            return new string[]{"GeneticLibrary.dll"}; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
+            return new string[] { "GeneticLibrary.dll", "GarchenkoAgorithm.dll" }; //Directory.GetFiles(HostingEnvironment.ApplicationPhysicalPath + "\\bin\\GALibraries\\");
         }
-        public byte[] getGeneticAlgorithm(int id)
+        public byte[] getGeneticAlgorithm(AISdb.AISTask task)
         {
             AISdb.AISdb inst = AISdb.AISdb.getInstance();
             inst.open(connstr);
-            string fpath = inst.getTaskFilepath(id) + "gaalgo.xml";
+            string fpath = inst.getTaskFilepath(task.id) + "gaalgo.xml";
             inst.close();
-            AlgoLib.IGenetical result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GeneticLibrary.Maximization>(fpath) as AlgoLib.IGenetical;
+            AlgoLib.IGenetical result;
+            switch (task.description)
+            {
+                case "GeneticLibrary.Maximization":
+                    result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GeneticLibrary.Maximization>(fpath) as AlgoLib.IGenetical;
+                    break;
+                case "GarchenkoAgorithm.Knapsack":
+                    result = GenXmlSerialization.XmlSerialization.AdvancedObjectDeserialize<GarchenkoAgorithm.Knapsack>(fpath) as AlgoLib.IGenetical;
+                    break;
+                default:
+                    throw new Exception();
+            }
             if (result != null)
             {
                 return GenXmlSerialization.BinSerialization.OgjectToByte(result);
@@ -226,7 +241,7 @@ namespace WcfService1
             inst.setTaskError(id, newError);
             string fpath = inst.getTaskFilepath(id) + "gaalgo.xml";
             inst.close();
-            AlgoLib.IGenetical aa = GenXmlSerialization.BinSerialization.ByteToObject(algorithm) as GeneticLibrary.Maximization;
+            AlgoLib.IGenetical aa = GenXmlSerialization.BinSerialization.ByteToObject(algorithm) as AlgoLib.IGenetical;
             GenXmlSerialization.XmlSerialization.AdvancedObjectSerialize<AlgoLib.IGenetical>(aa, fpath);
         }
         

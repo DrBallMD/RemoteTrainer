@@ -9,17 +9,17 @@ namespace GeneticLibrary
     [Serializable()]
     public class Maximization: IGenetical
     {
-        protected internal double mutationRate;
+        protected double mutationRate;
 
-        int start;
-        int end;
+        protected int start;
+        protected int end;
 
         protected internal int POPULATION_SIZE;
         protected internal int chromolength = 1; //для цифр от 0 до 31, сделать параметром
-        List<int> population;
-        List<double> fitnessValues;
+        protected List<int> population;
+        protected List<double> fitnessValues;
         protected internal List<Chromosome> chromosomes;
-        Random random;
+        protected Random random;
         public Maximization(string[] parametrs)
         {
             POPULATION_SIZE = Convert.ToInt32(parametrs[0]);

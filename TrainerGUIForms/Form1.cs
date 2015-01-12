@@ -79,7 +79,7 @@ namespace TrainerGUIForms
                 File.WriteAllBytes(comboBox1.SelectedItem.ToString(), service.GetAssembly(comboBox1.SelectedItem.ToString()));
             }
             genCount = (int)numericUpDown1.Value;
-            algorithm = GenXmlSerialization.BinSerialization.ByteToObject(service.getGeneticAlgorithm(task.id)) as AlgoLib.IGenetical;
+            algorithm = GenXmlSerialization.BinSerialization.ByteToObject(service.getGeneticAlgorithm(task)) as AlgoLib.IGenetical;
             worker.RunWorkerAsync();
             
         }

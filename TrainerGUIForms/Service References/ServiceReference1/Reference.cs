@@ -176,7 +176,7 @@ namespace TrainerGUIForms.ServiceReference1 {
         ANeuralNetwork.ANetwork getNeuralNetwork(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getGeneticAlgorithm", ReplyAction="http://tempuri.org/IService1/getGeneticAlgorithmResponse")]
-        byte[] getGeneticAlgorithm(int id);
+        byte[] getGeneticAlgorithm(TrainerGUIForms.ServiceReference1.AISTask task);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/setNetworkResults", ReplyAction="http://tempuri.org/IService1/setNetworkResultsResponse")]
         void setNetworkResults(int id, ANeuralNetwork.ANetwork net, float newError);
@@ -244,8 +244,8 @@ namespace TrainerGUIForms.ServiceReference1 {
             return base.Channel.getNeuralNetwork(id);
         }
         
-        public byte[] getGeneticAlgorithm(int id) {
-            return base.Channel.getGeneticAlgorithm(id);
+        public byte[] getGeneticAlgorithm(TrainerGUIForms.ServiceReference1.AISTask task) {
+            return base.Channel.getGeneticAlgorithm(task);
         }
         
         public void setNetworkResults(int id, ANeuralNetwork.ANetwork net, float newError) {

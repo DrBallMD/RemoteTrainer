@@ -67,9 +67,11 @@ namespace TrainerGUIForms
                     Form2 frm = new Form2(tt.id);
                     frm.Show();
                     break;
-                default:
+                case TaskType.GeneticAlgorithm:
                     Form1 frm2 = new Form1(client, tt);
                     frm2.ShowDialog();
+                    break;
+                default:
                     break;
             }
         }

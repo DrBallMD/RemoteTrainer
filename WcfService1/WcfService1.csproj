@@ -99,6 +99,10 @@
       <Project>{26f2c96d-5279-4340-a2f2-3d0a722b94e1}</Project>
       <Name>ANeuralNetwork</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GarchenkoAgorithm\GarchenkoAgorithm.csproj">
+      <Project>{b8057985-23ff-44ff-800b-5650a7ac615f}</Project>
+      <Name>GarchenkoAgorithm</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeneticLibrary\GeneticLibrary.csproj">
       <Project>{fd78b04f-9de7-4e91-8703-4fea012ffc3d}</Project>
       <Name>GeneticLibrary</Name>

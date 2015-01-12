@@ -19,7 +19,7 @@ namespace WcfService1
         [OperationContract]
         ANeuralNetwork.ANetwork getNeuralNetwork(int id);
         [OperationContract]
-        byte[] getGeneticAlgorithm(int id);
+        byte[] getGeneticAlgorithm(AISdb.AISTask task);
         [OperationContract]
         void setNetworkResults(int id, ANeuralNetwork.ANetwork net, float newError);
         [OperationContract]
